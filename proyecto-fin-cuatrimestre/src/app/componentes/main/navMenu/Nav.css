@@ -1,0 +1,6 @@
+.navContenedor {
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
