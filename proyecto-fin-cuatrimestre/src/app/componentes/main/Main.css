@@ -1,0 +1,8 @@
+.cuerpo{
+    width: 80%;
+    min-height: 500px;
+    margin: 8px auto ;
+    padding: 20px;
+    border: solid 2px rgba(191, 100, 25, 0.696);
+    border-radius: 4px ;
+}
