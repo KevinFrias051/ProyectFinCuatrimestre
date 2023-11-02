@@ -10,14 +10,11 @@ export default function Home() {
 
       {/* Header */}
       <Header />
-
       {/* Main */}
       <Main />
       {/* Footer */}
       <Footer />
-
-
-
+     
     </>
 
   )
