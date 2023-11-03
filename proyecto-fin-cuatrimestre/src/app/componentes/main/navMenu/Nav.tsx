@@ -18,6 +18,16 @@ export const Nav = () => {
             linkTo="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/#licencias-de-conducir"
             altText="Licensias"
           />
+             <BotonNav
+            imagenSrc={iconsBotonNavs.licencia.src}
+            linkTo="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/#licencias-de-conducir"
+            altText="Licensias"
+          />
+             <BotonNav
+            imagenSrc={iconsBotonNavs.licencia.src}
+            linkTo="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/#licencias-de-conducir"
+            altText="Licensias"
+          />
           <BotonNav
             imagenSrc={iconsBotonNavs.turnos.src}
             linkTo="https://www.docturno.com/"

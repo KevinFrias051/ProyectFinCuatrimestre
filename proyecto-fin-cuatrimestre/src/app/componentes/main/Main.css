@@ -1,14 +1,32 @@
-.cuerpo{
+.cuerpo {
     width: 80%;
     min-height: 500px;
-    margin: 8px auto ;
+    margin: 10px auto;
     padding: 20px;
-    border: solid 2px rgba(191, 100, 25, 0.696);
-    border-radius: 4px ;
-    background-color: #fbf48d;
+    /* border: solid 2px rgba(191, 100, 25, 0.696); */
+    /* border-radius: 4px; */
+    background-color: transparent;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
 }
-.tituloCuerpo{
+
+.tituloCuerpo {
     font-size: 32px;
     text-align: center;
-    background-color: #fbf48d
+    background-color: transparent
+}
+
+.divContMenuCarrousel {
+    background-color: transparent;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divMenu {
+    margin: 30px;
+    min-width: 350px;
+    min-height: 600px;
 }

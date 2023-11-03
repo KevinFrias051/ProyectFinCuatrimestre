@@ -1,0 +1,43 @@
+.imagenCarrousel {
+  height: 65vh;
+  min-height: 300px;
+  max-width: 1000px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.carousel-caption {
+  background: hsla(0, 0%, 100%, 0.164);
+  border-radius: 30px;
+}
+
+.carousel-caption h3 {
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.carousel-caption p {
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.carousel-indicators {
+  background-color: transparent;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: transparent;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+}
