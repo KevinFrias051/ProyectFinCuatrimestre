@@ -1,16 +1,19 @@
 .footer {
-    background-color: #fef3c7;
+
     width: 80%;
     height: auto;
     margin: 8px auto;
-    border: solid 2px rgba(191, 100, 25, 0.696);
-    border-radius: 4px;
+    /* border: solid 2px rgba(191, 100, 25, 0.696); */
+    /*  border-radius: 4px; */
     display: flex;
-    flex-flow:wrap;
+    flex-flow: wrap;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
 }
 
 .footer div {
-    background-color: #fef3c7;
+
     min-width: 200px;
     display: flex;
     flex-direction: column;
@@ -19,14 +22,14 @@
     justify-content: center;
 }
 
-.footer div > a{
-    background-color: #fef3c7;
+.footer div>a {
+
     text-decoration: none;
     color: black;
-    
+
 }
 
 .pie-telefonos>p {
-    background-color: #fef3c7;
+
     margin-bottom: 0px;
 }

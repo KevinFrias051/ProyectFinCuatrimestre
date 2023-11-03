@@ -1,37 +1,41 @@
-.cabecera{
+.cabecera {
     display: flex;
     width: 80%;
     height: 150px;
-    margin: 8px auto ;
+    margin: 8px auto;
     padding: 20px;
-    border: solid 2px rgba(191, 100, 25, 0.696);
-    border-radius: 10px ;
+    /* border: solid 2px rgba(191, 100, 25, 0.696); */
+    /* border-radius: 10px; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #cd990a
+    background-color: transparent;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+
 }
 
 
 .LogoMunicipio {
     width: 300px;
     height: 100px;
-    background-color: #cd990a;
+    background-color: transparent;
 }
 
 .Nombre {
-    background-color: #cd990a;
+    background-color: transparent;
 }
 
 .Redes {
-    background-color: #cd990a;
+    background-color: transparent;
 }
 
 .DivLogo {
-    background-color: #cd990a;
+    background-color: transparent;
 }
 
 .DivNombreYRedes {
-    background-color: #cd990a;
+    background-color: transparent;
     justify-content: space-between;
 }

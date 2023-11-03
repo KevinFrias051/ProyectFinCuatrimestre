@@ -15,7 +15,7 @@ export const CarrouselItem = (props: any) => {
       />
 
       <Carousel.Caption>
-        <h5>{firstSlide}</h5>
+        <h3>{firstSlide}</h3>
         <p>{secondSlide}</p>
       </Carousel.Caption>
 
