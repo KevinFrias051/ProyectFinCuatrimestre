@@ -11,7 +11,7 @@ export const Header = () => {
           <ContRedesSociales className='Redes'/>
         </div>
         <div className='DivLogo'>
-          <img className="LogoMunicipio" src="https://www.olavarria.gov.ar/wp-content/uploads/2020/09/LOGO-PARA-WEB.png" alt="LogoMunicipio" srcset="" />
+          <img className="LogoMunicipio" src="https://www.olavarria.gov.ar/wp-content/uploads/2020/09/LOGO-PARA-WEB.png" alt="LogoMunicipio"  />
         </div>
       </div>
     </>
