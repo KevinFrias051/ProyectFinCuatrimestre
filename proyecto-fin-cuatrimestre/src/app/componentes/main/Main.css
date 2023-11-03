@@ -12,3 +12,17 @@
     text-align: center;
     background-color: #fbf48d
 }
+
+.divContMenuCarrousel{
+    background-color:transparent;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divMenu{
+    margin: 30px;
+    min-width: 150px;
+    min-height: 300px;
+}
