@@ -9,11 +9,9 @@ export const BotonNav = (props: any) => {
   };
   return (
     <>
-      <div>
-        <button className="botonNav" onClick={() => navegarALinkTo()}>
-          <img src={imagenSrc} alt={altText} />
-        </button>
-      </div>
+      <button className="botonNav" onClick={() => navegarALinkTo()}>
+        <img src={imagenSrc} alt={altText} />
+      </button>
     </>
   );
 };
