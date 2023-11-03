@@ -2,6 +2,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 200px;
-    max-height: 200px;
+    background-color: #cd990a;
 }

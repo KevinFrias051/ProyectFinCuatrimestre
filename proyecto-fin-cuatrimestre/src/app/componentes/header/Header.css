@@ -8,12 +8,30 @@
     border-radius: 10px ;
     flex-direction: row;
     justify-content: space-between;
-    /*background-color: agregar*/
+    align-items: center;
+    background-color: #cd990a
 }
 
 
 .LogoMunicipio {
     width: 300px;
-    height: 70px;
-    background-color: blue;
+    height: 100px;
+    background-color: #cd990a;
+}
+
+.Nombre {
+    background-color: #cd990a;
+}
+
+.Redes {
+    background-color: #cd990a;
+}
+
+.DivLogo {
+    background-color: #cd990a;
+}
+
+.DivNombreYRedes {
+    background-color: #cd990a;
+    justify-content: space-between;
 }
