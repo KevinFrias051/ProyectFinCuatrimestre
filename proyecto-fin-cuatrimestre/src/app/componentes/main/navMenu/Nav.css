@@ -2,5 +2,7 @@
     border: solid 2px black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    height:max-content ;
 }
