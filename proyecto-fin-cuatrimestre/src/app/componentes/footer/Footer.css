@@ -1,8 +1,19 @@
-.pie{
+.footer {
     width: 80%;
-    height: 80px;
+    height: auto;
     margin: 8px auto ;
-    padding: 20px;
     border: solid 2px rgba(191, 100, 25, 0.696);
     border-radius: 4px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 200px;
+    margin: 8px auto ;
+    padding: 20px;
+    justify-content: center;
 }

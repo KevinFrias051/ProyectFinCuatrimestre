@@ -1,7 +1,7 @@
 import React from "react";
 import { BotonRedesHeader } from "./Botones/BotonesHeader";
 import "./ContRedesSociales.css";
-import Facebook from "../../../../public/Facebook.png";
+import Facebook from "../../../../../public/Facebook.png";
 
 export const ContRedesSociales = () => {
   return (
