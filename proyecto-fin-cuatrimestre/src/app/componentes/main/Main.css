@@ -5,8 +5,10 @@
     padding: 20px;
     border: solid 2px rgba(191, 100, 25, 0.696);
     border-radius: 4px ;
+    background-color: #fbf48d;
 }
 .tituloCuerpo{
     font-size: 32px;
     text-align: center;
+    background-color: #fbf48d
 }

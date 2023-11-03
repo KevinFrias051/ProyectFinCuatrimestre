@@ -6,12 +6,12 @@ export const Header = () => {
   return (
     <>
       <div className="cabecera">
-        <div>
-          <h1>Municipio</h1>
-          <ContRedesSociales />
+        <div className='DivNombreYRedes'>
+          <h1 className='Nombre'>Municipio de Olavarria</h1>
+          <ContRedesSociales className='Redes'/>
         </div>
-        <div className="LogoMunicipio">
-          <img  src="" alt="Logo" />
+        <div className='DivLogo'>
+          <img className="LogoMunicipio" src="https://www.olavarria.gov.ar/wp-content/uploads/2020/09/LOGO-PARA-WEB.png" alt="LogoMunicipio" srcset="" />
         </div>
       </div>
     </>
