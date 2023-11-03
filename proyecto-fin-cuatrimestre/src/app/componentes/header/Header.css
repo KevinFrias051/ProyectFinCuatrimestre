@@ -17,14 +17,21 @@
 }
 
 
-.LogoMunicipio {
-    width: 300px;
+.LogoMunicipio1 {
+    width: 100px;
     height: 100px;
+    background-color: transparent;
+}
+.LogoMunicipio2 {
+    overflow: none;
+    height: 80%;
+    width: 80%;
     background-color: transparent;
 }
 
 .Nombre {
     background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .Redes {
@@ -37,5 +44,11 @@
 
 .DivNombreYRedes {
     background-color: transparent;
-    justify-content: space-between;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+h1{
+    color: #1f5bab;
 }
