@@ -18,14 +18,14 @@
 
 
 .LogoMunicipio1 {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: transparent;
 }
 .LogoMunicipio2 {
     overflow: none;
-    height: 80%;
-    width: 80%;
+    height: 70px;
+    width: 200px;
     background-color: transparent;
 }
 
@@ -36,6 +36,7 @@
 
 .Redes {
     background-color: transparent;
+
 }
 
 .DivLogo {
