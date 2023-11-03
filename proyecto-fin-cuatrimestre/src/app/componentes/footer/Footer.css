@@ -1,19 +1,32 @@
 .footer {
+    background-color: #fef3c7;
     width: 80%;
     height: auto;
-    margin: 8px auto ;
+    margin: 8px auto;
     border: solid 2px rgba(191, 100, 25, 0.696);
-    border-radius: 4px ;
+    border-radius: 4px;
     display: flex;
-    flex-direction: row;
+    flex-flow:wrap;
 }
 
-.pie{
+.footer div {
+    background-color: #fef3c7;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
-    width: 20%;
-    height: 200px;
-    margin: 8px auto ;
-    padding: 20px;
+    height: auto;
+    margin: 8px auto;
     justify-content: center;
+}
+
+.footer div > a{
+    background-color: #fef3c7;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.pie-telefonos>p {
+    background-color: #fef3c7;
+    margin-bottom: 0px;
 }
