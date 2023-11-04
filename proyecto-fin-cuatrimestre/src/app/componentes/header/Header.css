@@ -16,7 +16,6 @@
 
 }
 
-
 .LogoMunicipio1 {
     width: 120px;
     height: 120px;
@@ -52,4 +51,14 @@
 
 h1{
     color: #1f5bab;
+
+}
+
+@media (max-width:700px)  {
+	.divTitulo {
+		opacity: 0;
+        width: 0px;
+        height: 0px;
+	}
+
 }
