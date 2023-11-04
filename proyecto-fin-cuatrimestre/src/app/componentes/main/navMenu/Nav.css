@@ -12,6 +12,12 @@
     flex-direction: row;
 }
 
+.DivNavBarItem p {
+    color: #1f5bab;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
 @media (max-width:800px)  {
 	.DivNavBarItem p {
 		opacity: 0;
