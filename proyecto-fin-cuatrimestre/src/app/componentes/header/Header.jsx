@@ -12,7 +12,9 @@ export const Header = () => {
           <img className="LogoMunicipio2" src={Logo2.src} alt="LogoMunicipio2" />
           <ContRedesSociales className='Redes' />
         </div>
+        <div className="divTitulo">
         <h1>Bienvenidos a Olavarria</h1>
+        </div>
         <div className='DivLogo'>
           <img className="LogoMunicipio1" src={Logo3.src} alt="LogoMunicipio1" />
         </div>

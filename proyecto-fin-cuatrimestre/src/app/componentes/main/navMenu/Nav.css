@@ -1,8 +1,22 @@
-.navContenedor {
-    /* border: solid 2px black; */
+.bg-body-tertiary{
+    background-color: transparent !important;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height:max-content ;
+}
+
+.DivNavBarItem{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:800px)  {
+	.DivNavBarItem p {
+		opacity: 0;
+        width: 0px;
+        height: 0px;
+	}
+
 }
