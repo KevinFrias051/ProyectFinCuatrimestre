@@ -1,7 +1,7 @@
 .imagenCarrousel {
   height: 65vh;
-  min-height: 300px;
-  max-width: 1000px;
+  height: auto;
+  width: auto;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
