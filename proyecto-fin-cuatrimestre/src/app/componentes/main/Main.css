@@ -35,11 +35,15 @@
     /* flex: 1 1 25% */
 }
 
-@media (max-width:500px)  {
+@media (max-width:1191px)  {
 	.divCarrousel {
 		/* opacity: 0;
         width: 0px;
         height: 0px; */
         margin-top: 30px;
 	}
+
+    .divContenedorMenu {
+       display: none;
+    }
 }

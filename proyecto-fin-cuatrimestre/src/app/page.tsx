@@ -8,14 +8,12 @@ import { Footer } from "./componentes/footer/Footer"
 export default function Home() {
   return (
     <>
-      <div className='general'>
       {/* Header */}
       <Header />
       {/* Main */}
       <Main />
       {/* Footer */}
       <Footer />
-      </div>
     </>
 
   )
