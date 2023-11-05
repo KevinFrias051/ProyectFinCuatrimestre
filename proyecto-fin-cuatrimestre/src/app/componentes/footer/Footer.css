@@ -14,12 +14,13 @@
 
 .footer div {
 
-    min-width: 200px;
+    /* min-width: 200px; */
     display: flex;
     flex-direction: column;
     height: auto;
-    margin: 8px auto;
-    justify-content: center;
+    margin: auto;
+    padding: 15px;
+    justify-content: space-between;
 }
 
 .footer div>a {
