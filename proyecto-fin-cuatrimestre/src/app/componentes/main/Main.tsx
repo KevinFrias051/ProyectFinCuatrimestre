@@ -19,7 +19,7 @@ export const Main = () => {
 
         <div className='divContMenuCarrousel'>
 
-          <div className='divMenu'>
+          <div className='divContenedorMenu'>
             <Menu />
           </div>
 

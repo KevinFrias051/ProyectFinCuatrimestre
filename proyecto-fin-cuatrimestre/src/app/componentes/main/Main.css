@@ -19,14 +19,17 @@
 
 .divContMenuCarrousel {
     background-color: transparent;
-    margin: 30px;
+    margin: 0px 30px 30px 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+    height: 495px;
 
-.divMenu {
-    margin: 30px;
-    min-width: 350px;
-    min-height: 600px;
+}
+.divCarrousel{
+    margin-left: 100px;
+}
+.divContenedorMenu {
+    width: 200px;
+    height: 495px;
 }
