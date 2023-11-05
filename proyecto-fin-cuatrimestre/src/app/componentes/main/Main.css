@@ -24,6 +24,8 @@
     height: auto; */
     max-width: 700px;
     max-height: 700px;
+    z-index: 1;
+    position: relative;
     /* flex: 1 1 50%; */
 
 }
@@ -42,8 +44,4 @@
         height: 0px; */
         margin-top: 30px;
 	}
-
-    .divContenedorMenu {
-       display: none;
-    }
 }
