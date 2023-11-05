@@ -14,14 +14,16 @@
     display: flex;
     flex-wrap: wrap;    
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
-
+    max-height: 750px;
 }
 .divCarrousel{
-    margin-left: 100px;
-    width: auto;
-    height: auto;
+    /* margin-left: 100px; */
+   /*  width: auto;
+    height: auto; */
+    max-width: 700px;
+    max-height: 700px;
     /* flex: 1 1 50%; */
 
 }
@@ -33,10 +35,11 @@
     /* flex: 1 1 25% */
 }
 
-/* @media (max-width:500px)  {
+@media (max-width:500px)  {
 	.divCarrousel {
-		opacity: 0;
+		/* opacity: 0;
         width: 0px;
-        height: 0px;
+        height: 0px; */
+        margin-top: 30px;
 	}
-} */
+}

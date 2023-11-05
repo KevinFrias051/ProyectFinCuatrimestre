@@ -1,7 +1,7 @@
 .imagenCarrousel {
-  height: 65vh;
+  /* height: 65vh;
   height: auto;
-  width: auto;
+  width: auto; */
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
