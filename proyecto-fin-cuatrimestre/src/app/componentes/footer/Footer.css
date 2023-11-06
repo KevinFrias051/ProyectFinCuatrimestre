@@ -1,5 +1,4 @@
 .footer {
-
     width: 80%;
     height: auto;
     margin: 8px auto;
@@ -13,7 +12,6 @@
 }
 
 .footer div {
-
     /* min-width: 200px; */
     display: flex;
     flex-direction: column;
@@ -24,13 +22,34 @@
 }
 
 .footer div>a {
-
     text-decoration: none;
     color: black;
 
 }
 
-.pie-telefonos>p {
+/* .pie-telefonos>p {
+    margin-bottom: 7px;
+}
+ */
 
-    margin-bottom: 0px;
+.pie-enlaces>a:hover {
+    color: black;
+    background: #bbb775;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+
+.pie-areas>a:hover {
+    color: black;
+    background: #e1dc8c;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-bottom: 2px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
 }

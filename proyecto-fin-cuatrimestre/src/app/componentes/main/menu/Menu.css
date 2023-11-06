@@ -23,7 +23,8 @@
 
 .divMenu>a:hover {
   color: black;
-  background: #e295106e
+  background: #e295106e;
+  font-weight: 600;
 }
 
 @media (max-width: 1191px) {
