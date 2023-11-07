@@ -27,3 +27,11 @@ background-color: #ffffff;
     '900': '#78350f',
     '950': '#451a03',
 },*/
+
+.cardsContenedores{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
