@@ -4,10 +4,7 @@
   display: flex;
   flex-direction: column;
   background-color: #41495696;
-
 }
-
-
 
 .divMenu a {
   display: block;
@@ -20,7 +17,6 @@
   border: solid 1px;
 }
 
-
 .divMenu>a:hover {
   color: black;
   background: #e295106e;
@@ -32,54 +28,3 @@
     display: none;
   }
 }
-
-
-/* Prueba HamburguesaMenu */
-
-/* ul {
-  display: none;
-}
-
-input:checked~ul {
-  display: block;
-}
-
-input {
-  display: none;
-}
-
-label {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
-}
-
-ul a {
-  display: block;
-  background: lightgrey;
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  border-bottom: 1px solid grey;
-} */
-
-
-
-/* @media (min-width: 1192px) {
-  .Burguer {
-    display: none;
-  }
-}
-
-.Burguer {
-  z-index: 999;
-  position: absolute;
-
-} */
