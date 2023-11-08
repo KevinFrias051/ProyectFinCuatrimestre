@@ -51,12 +51,12 @@
 
 h1{
     color: #1f5bab;
-
+font-size: 40px;
+font-weight: bold;
 }
 
 @media (max-width:1025px)  {
 	.divTitulo {
 		display: none;
 	}
-
 }

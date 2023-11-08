@@ -7,24 +7,23 @@
 
 }
 
-
-
 .divMenu a {
   display: block;
   width: 100%;
-  padding: 14px 22px;
+  padding: 12px 22px;
   float: left;
   text-decoration: none;
   color: #000000;
-  font-size: 13px;
+  font-size: 16px;
   border: solid 1px;
+  font-weight: 600;
 }
-
 
 .divMenu>a:hover {
   color: black;
   background: #e295106e;
-  font-weight: 600;
+  /* font-weight: 600; */
+  
 }
 
 @media (max-width: 1191px) {
@@ -32,7 +31,6 @@
     display: none;
   }
 }
-
 
 /* Prueba HamburguesaMenu */
 
@@ -69,8 +67,6 @@ ul a {
   list-style: none;
   border-bottom: 1px solid grey;
 } */
-
-
 
 /* @media (min-width: 1192px) {
   .Burguer {
