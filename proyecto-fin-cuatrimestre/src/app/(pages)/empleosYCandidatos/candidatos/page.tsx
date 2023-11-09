@@ -1,5 +1,5 @@
 "use client"
-import { CardPersona } from "../../.././componentes/card/CardPersona";
+import { CardEstilada } from "../../.././componentes/cardEstilada/cardEstilada";
 import { useRouter } from 'next/navigation';
 
 export default function Candidatos() {
@@ -7,15 +7,10 @@ export default function Candidatos() {
 
     return (
         <>
-            <div className="cardsContenedores">
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
+            <div className="divContCardEst">
+                <p>Cards Candidatos</p>
+                <CardEstilada />
+                <CardEstilada />
             </div>
         </>
     );

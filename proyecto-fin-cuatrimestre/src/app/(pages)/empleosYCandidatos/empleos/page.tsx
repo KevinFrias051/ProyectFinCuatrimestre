@@ -8,10 +8,7 @@ export default function Empleos() {
     return (
         <>
             <div className="cardsContenedores">
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
-                <CardPersona />
+                <p>Cards Empleos</p>
                 <CardPersona />
                 <CardPersona />
                 <CardPersona />

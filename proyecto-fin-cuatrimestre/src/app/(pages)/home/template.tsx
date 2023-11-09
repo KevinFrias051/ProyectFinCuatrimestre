@@ -1,6 +1,4 @@
 "use client";
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
 import { Header } from "../../componentes/header/Header";
 import { Footer } from '@/app/componentes/footer/Footer';
 
