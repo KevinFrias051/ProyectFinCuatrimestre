@@ -1,15 +1,15 @@
-import "./CardPersona.css";
+import "./CardEmpleo.css";
 
 import React from "react";
-import imgPrueba from "../../../../public/Persona.jpeg"
+import imgPrueba from "../../../../public/Distribuidor Coca-Cola.jpeg";
 
-export const CardPersona = () => {
+export const CardEmpleo = () => {
   return (
     <div className="cardContainer">
-      <img src={imgPrueba.src} alt="Persona" />
-      <div className="contenedorDatosPersonales">
-        <h4 className="nombrePersona">Franco Serjen</h4>
-        <h5 className="profesionPersona">Empresario</h5>
+      <img src={imgPrueba.src} alt="Empresa" />
+      <div className="contenedorDatosEmpresa">
+        <h4 className="nombreEmpresa">CocaCola</h4>
+        <h5 className="profesionEmpresa">Distribuidor</h5>
         <p className="descripcion">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
           recusandae
