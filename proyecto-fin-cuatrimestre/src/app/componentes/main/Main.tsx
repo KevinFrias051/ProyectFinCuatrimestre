@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import BrandExample from './navMenu/Nav';
 import Carrousel from './carrousel/Carrousel';

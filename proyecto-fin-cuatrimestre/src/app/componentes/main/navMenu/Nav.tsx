@@ -41,7 +41,7 @@ export default function BrandExample() {
             </div>
           </Navbar.Brand>
 
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="../../empleosYCandidatos">
             <div className="DivNavBarItem">
               <img
                 alt=""

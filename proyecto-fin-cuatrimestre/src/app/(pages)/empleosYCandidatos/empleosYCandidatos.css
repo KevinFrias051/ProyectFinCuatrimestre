@@ -1,0 +1,12 @@
+.contBtnEmpYCand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contBtnEmpYCand button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
