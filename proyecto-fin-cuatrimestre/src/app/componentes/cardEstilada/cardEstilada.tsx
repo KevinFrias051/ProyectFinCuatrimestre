@@ -1,13 +1,16 @@
 import "./cardEstilada.css"
 import Facebook from "../../../../public/Facebook.png"
-export function CardEstilada() {
+
+
+export function CardEstilada(props:any) {
+    const {srcImg , cardName,cardDesc} = props;
     return (
         <>
             <div className="container">
                 <div className="profile-wrapper">
                     <div className="profile">
                         <div className="profile-image">
-                            <img src={Facebook.src} alt="profile" />
+                            <img src={srcImg} alt="profile" />
                         </div>
                         {/* <ul className="social-icons">
                             <li>
@@ -57,10 +60,9 @@ export function CardEstilada() {
                             </li>
                         </ul> */}
                         <div className="profile-name">
-                            <h2>Melissa Taylor</h2>
+                            <h2>{cardName}</h2>
                             <div className="profile-bio">
-                                I´m a JS Full-Stack engineer,
-                                love working with <em>React</em> and <em>Node.js</em>.
+                                {cardDesc} {/* <em>React</em> and <em>Node.js</em> */}.
                             </div>
                         </div>
                     </div>
