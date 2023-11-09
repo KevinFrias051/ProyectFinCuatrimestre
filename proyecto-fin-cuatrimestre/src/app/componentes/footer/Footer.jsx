@@ -9,8 +9,8 @@ export const Footer = () => {
         <p>Enlaces de Interes</p>
         <a href="http://www.olavarria.gov.ar/olavarria-interactiva/">Olavarria Interactiva</a>
         <a href="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/#licencias-de-conducir">Licencia de Conducir</a>
-        <a href="http://https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/">Guía de Trámites</a>
-        <a href="http://https://hcd.olavarria.gov.ar/">Concejo Deliberante</a>
+        <a href="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/">Guía de Trámites</a>
+        <a href="https://hcd.olavarria.gov.ar/">Concejo Deliberante</a>
       </div>
       <div className='pie-areas'>
         <p>Areas de Gobierno</p>
