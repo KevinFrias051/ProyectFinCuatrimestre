@@ -1,0 +1,67 @@
+.cuerpo {
+    width: 80%;
+    /* min-height: 500px; */
+    margin: 10px auto;
+    padding: 20px;
+    /* background-color: transparent; */
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+}
+
+.divContMenuCarrousel {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;    
+    flex-direction: row;
+    /* justify-content:space-between; */
+    align-items: center;
+    max-height: 750px;
+}
+.divCarrousel{
+    /* margin-left: 100px; */
+   /*  width: auto;
+    height: auto; */
+    max-width: 700px;
+    max-height: 700px;
+    z-index: 1;
+    position: relative;
+    /* flex: 1 1 50%; */
+
+}
+.divContenedorMenu {
+    /* display: flex;
+    justify-content: center; */
+    width: 200px;
+    height: auto;
+    /* flex: 1 1 25% */
+}
+
+.divContenedorHamburguesa {
+    display: flex;
+    max-width: 100%;
+}
+
+@media (max-width:1192px)  {
+	.divCarrousel {
+		/* opacity: 0;
+        width: 0px;
+        height: 0px; */
+        margin-top: 35px;
+	}
+
+    .divContMenuCarrousel{
+        justify-content:flex-start;
+    }
+
+}
+
+@media (min-width: 1191px) {
+    .divContenedorHamburguesa {
+      display: none;
+    }
+
+    .divContMenuCarrousel{
+        justify-content: space-around;
+    }
+  }

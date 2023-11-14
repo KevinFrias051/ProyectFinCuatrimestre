@@ -1,0 +1,9 @@
+.img {
+    max-width: 30px;
+    max-height: 30px; 
+    border: none;
+}
+.BotonesHeader {
+    border: none;
+    background-color: transparent;
+}

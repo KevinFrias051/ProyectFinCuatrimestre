@@ -1,0 +1,26 @@
+.bg-body-tertiary{
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height:max-content ;
+}
+
+.DivNavBarItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.DivNavBarItem p {
+    color: #1f5bab;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+@media (max-width:885px)  {
+	.DivNavBarItem p {
+		display: none;
+	}
+
+}

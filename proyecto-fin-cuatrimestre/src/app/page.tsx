@@ -1,24 +1,15 @@
-import './globals.css';
-import { Header } from "./componentes/header/Header"
-import { Main } from "./componentes/main/Main"
-import { Footer } from "./componentes/footer/Footer"
-
+"use client";
+import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
+import "./globals.css";
 
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/home");
+  }, []);
+  
   return (
-    <>
-
-      {/* Header */}
-      <Header />
-
-      {/* Main */}
-      <Main />
-      {/* Footer */}
-      <Footer />
-
-
-
-    </>
-
-  )
+    <></>
+  );
 }
