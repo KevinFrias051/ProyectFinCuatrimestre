@@ -1,14 +1,12 @@
 "use client";
 import { CardEmpleo } from "../../../componentes/card/CardEmpleo";
-import { useRouter } from "next/navigation";
+import "../portal.css";
+
 
 export default function Empleos() {
-  const router = useRouter();
-
   return (
     <>
-      <div className="cardsContenedores">
-        <p>Cards Empleos</p>
+      <div className="divContCard">
         <CardEmpleo />
         <CardEmpleo />
         <CardEmpleo />

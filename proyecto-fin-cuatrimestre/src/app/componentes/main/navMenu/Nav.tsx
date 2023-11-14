@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react";
-import { BotonNav } from "./botonNav/BotonNav";
 import "./Nav.css";
 import { iconsBotonNavs } from "../../../../../public/Imagenes";
 import Container from 'react-bootstrap/Container';
@@ -41,7 +40,7 @@ export default function BrandExample() {
             </div>
           </Navbar.Brand>
 
-          <Navbar.Brand href="../../empleosYCandidatos">
+          <Navbar.Brand href="../../portal/empleos">
             <div className="DivNavBarItem">
               <img
                 alt=""

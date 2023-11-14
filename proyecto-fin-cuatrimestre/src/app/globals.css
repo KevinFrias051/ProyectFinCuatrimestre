@@ -8,7 +8,7 @@
 background-color: #ffffff;
   background-image: linear-gradient(315deg, #ffffff 7%, #eee87c 70%, #f0ac53 100%);
 } */
-.bodycss{
+body{
   margin: 0;
   padding: 0;
 /* background-color: #ffffff; */
