@@ -1,5 +1,5 @@
 "use client"
-import { CardEstilada } from "../../.././componentes/cardEstilada/cardEstilada";
+import { CardEstilada } from "../../../componentes/cardCandidato/cardCandidato";
 import "../portal.css";
 
 import Candidato1 from "../../../../../public/FotosCandidatos/Candidato1.jpg"
