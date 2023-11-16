@@ -26,6 +26,7 @@
     height: 70px;
     width: 200px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .Nombre {

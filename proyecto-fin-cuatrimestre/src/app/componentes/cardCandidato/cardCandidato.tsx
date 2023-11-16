@@ -1,14 +1,14 @@
 import "./cardCandidato.css"
 
 export function CardEstilada(props: any) {
-    const { srcImg, cardName, cardDesc } = props;
+    const { srcImg, cardName, cardPuesto, cardLocalication, cardSkills, } = props;
     return (
         <>
             <div className="card-container">
                 <img className="round" src={srcImg} alt="user" />
                 <h3>{cardName}</h3>
-                <h6>New York</h6>
-                <p>{cardDesc}</p>
+                <h6>{cardLocalication}</h6>
+                <p>{cardPuesto}</p>
                 <div className="buttons">
                     <button className="primary">
                         Contratar
@@ -20,7 +20,6 @@ export function CardEstilada(props: any) {
                 <div className="skills">
                     <h6>Skills</h6>
                     <ul>
-                        <li>UI / UX</li>
                         <li>Front End Development</li>
                         <li>HTML</li>
                         <li>CSS</li>
