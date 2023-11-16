@@ -10,22 +10,28 @@ export default function Candidatos() {
 
     return (
         <>
-            <div className="divContCard">
-                <CardEstilada
-                    srcImg = {Candidato1.src}
-                    cardName = 'Kevin Frias'
-                    cardDesc = 'Fotografo'
-                />
-                <CardEstilada
-                    srcImg = {Candidato2.src}
-                    cardName = 'Kevin Frias'
-                    cardDesc = 'Compositor de el biza'
-                />
-                <CardEstilada
-                    srcImg = {Candidato3.src}
-                    cardName = 'Kevin Frias'
-                    cardDesc = 'Proyect Manager'
-                />
+            <div className="divContenedorMain">
+                <div className="divFiltro">
+                    <p>ACA VA EL FILTRO</p>
+                </div>
+                <div className="divContenedorCard">
+
+                    <CardEstilada
+                        srcImg={Candidato1.src}
+                        cardName='Kevin Frias'
+                        cardDesc='Fotografo'
+                    />
+                    <CardEstilada
+                        srcImg={Candidato2.src}
+                        cardName='Kevin Frias'
+                        cardDesc='Compositor de el biza'
+                    />
+                    <CardEstilada
+                        srcImg={Candidato3.src}
+                        cardName='Kevin Frias'
+                        cardDesc='Proyect Manager'
+                    />
+                </div>
             </div>
         </>
     );

@@ -1,4 +1,26 @@
-.divContCard {
+.divContenedorMain {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;    
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+}
+
+.divFiltro {
+    width: 200px;
+    /* height: auto;
+    borrar el de abajo y dejar este cuando este echo
+    */
+    height: 250px;
+    border: solid 1px black;
+}
+
+.divContenedorCard {
     display: flex;
     max-width: 80%;
     flex-direction: row-reverse;

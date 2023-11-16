@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Nav.css";
-import { iconsBotonNavs } from "../../../../../public/Imagenes";
+import { iconsBotonNavs } from "../../../../../public//iconosNavMenu/Imagenes";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 

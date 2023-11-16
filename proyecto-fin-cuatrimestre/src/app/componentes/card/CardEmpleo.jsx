@@ -1,7 +1,7 @@
 import "./CardEmpleo.css";
 
 import React from "react";
-import imgPrueba from "../../../../public/Distribuidor Coca-Cola.jpeg";
+import imgPrueba from "../../../../public/ImagenesCards/Distribuidor Coca-Cola.jpeg";
 
 export const CardEmpleo = () => {
   return (
