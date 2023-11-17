@@ -2,8 +2,8 @@
 import React from "react";
 import "./Header.css";
 import { ContRedesSociales } from "./RedesSociales/ContRedesSociales";
-import Logo3 from "../../../../public/Logo3.png";
-import Logo2 from "../../../../public/Logo2.png";
+import Logo3 from "../../../../public/logosHeader/Logo3.png";
+import Logo2 from "../../../../public/logosHeader/Logo2.png";
 import { useRouter, usePathname } from "next/navigation";
 
 export const Header = () => {
