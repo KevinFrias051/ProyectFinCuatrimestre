@@ -13,4 +13,9 @@ max-width: 80%;
     -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
     -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
     margin: 10px;
+    width: 120px;
+    background-color: rgb(228, 180, 91);
+    border-color: black;
 }
+
+

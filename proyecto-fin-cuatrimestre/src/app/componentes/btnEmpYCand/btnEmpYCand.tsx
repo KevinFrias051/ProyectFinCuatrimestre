@@ -3,7 +3,6 @@ import "./btnEmpYCand.css";
 import { useRouter, usePathname } from "next/navigation";
 
 export const BtnEmpYCand = () => {
-
     const router = useRouter();
   const pathname= usePathname();
 
