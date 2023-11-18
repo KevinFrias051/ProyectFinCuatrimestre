@@ -2,8 +2,8 @@ interface Candidatos {
     id: number,
     name : string
     years : number,
-    disponibilidad : any,
-    movilidad : any,
+    disponibilidad : boolean,
+    movilidad : boolean,
     avatar : any
 };
 

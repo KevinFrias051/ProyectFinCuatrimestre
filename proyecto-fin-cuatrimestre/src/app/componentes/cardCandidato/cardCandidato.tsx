@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./cardCandidato.css"
 
 export function CardEstilada(props: any) {
-    const { srcImg, cardName, cardPuesto, cardLocalication, cardSkills, } = props;
+    const { srcImg, cardName, cardYears, cardMovilidad, cardDisponibilidad, cardSkills, } = props;
     
     const [contrato,setContrato] = useState<String>("Contratar");
     const contratar = () => {
@@ -12,15 +12,19 @@ export function CardEstilada(props: any) {
             setContrato("Contratar");
         }
     }
+
+    const disponibilidad : string = cardDisponibilidad ? "Full-Time" : "Part-Time";
+    const movilidad : string = cardMovilidad ? "Si" : "No";
+
+
     return (
         <>
             <div className="card-container">
                 <img className="round" src={srcImg} alt="user" />
                 <h3>{cardName}</h3>
-                <p>{cardPuesto}</p>
-                <p>Edad</p>
-                <p>Movilidad</p>
-                <p>disponibilidad</p>
+                <p>{cardYears}</p>
+                <p>Movilidad Propia: {movilidad}</p>
+                <p>Disponibilidad: {disponibilidad}</p>
                 <div className="buttons">
                     <button className="primary" onClick={contratar}>
                         {contrato}
