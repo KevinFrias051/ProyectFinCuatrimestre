@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import { CardEstilada } from "../../../componentes/cardCandidato/CardCandidato";
+import { CardEstilada } from "../../../componentes/cardCandidato/cardCandidato";
 import "../portal.css";
 import {Candidato, CandidatoFiltro } from "@/app/model/Candidato";
 import { GetCandidatosFromAPI } from "@/app/services/data";
 import { Buscador } from "../../../componentes/buscador/Buscador";
 import { Filtro } from "../../../componentes/filtros/Filtro";
-import { Console } from "console";
+/* import { Console } from "console"; */
 
 export default function Candidatos() {
 
@@ -39,14 +39,19 @@ export default function Candidatos() {
     console.log(filtroCandidatos) ;
     const result = CandidatoAux.filter(cand =>
         /* cand.name.includes(search) || */
-        cand.disponibilidad === filtroCandidatos.disponibilidad ||
-        cand.movilidad === filtroCandidatos.movilidad ||
+        cand.disponibilidad === filtroCandidatos.disponibilidad &&
+        cand.movilidad === filtroCandidatos.movilidad &&
         cand.edad >= filtroCandidatos.edad[0] && cand.edad <= filtroCandidatos.edad[1]
 
     );
     setCandidatos(result);
     console.log(result);
    }
+
+   /* const resetearFiltros = ()=>{
+
+    setCandidatos(Candidato);
+  } */
 
    useEffect(() => {
        cargarCandidato();
@@ -56,8 +61,8 @@ export default function Candidatos() {
        <>
            <div className="divContenedorMain">
                <div className="divFiltro">
-                  <Buscador setSearch={setSearch} />
-                  <Filtro filtrarCandidatos={filtrarCandidatos}/>
+                  {/* <Buscador setSearch={setSearch} /> */}
+                  <Filtro filtrarCandidatos={filtrarCandidatos} /* resetearFiltros={resetearFiltros} *//>
                </div>
                <div className="divContenedorCard">
                   {Candidato.map((cand:Candidato) => (

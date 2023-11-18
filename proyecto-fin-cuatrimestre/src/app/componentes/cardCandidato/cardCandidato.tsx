@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./cardCandidato.css"
+import "./CardCandidato.css"
 
 export function CardEstilada(props: any) {
     const { srcImg, cardName, cardEdad, cardMovilidad, cardDisponibilidad, cardSkills, } = props;
