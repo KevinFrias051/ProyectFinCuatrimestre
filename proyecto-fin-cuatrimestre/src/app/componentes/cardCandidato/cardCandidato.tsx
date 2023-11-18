@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./cardCandidato.css"
 
 export function CardEstilada(props: any) {
-    const { srcImg, cardName, cardYears, cardMovilidad, cardDisponibilidad, cardSkills, } = props;
+    const { srcImg, cardName, cardEdad, cardMovilidad, cardDisponibilidad, cardSkills, } = props;
     
     const [contrato,setContrato] = useState<String>("Contratar");
     const contratar = () => {
@@ -22,7 +22,7 @@ export function CardEstilada(props: any) {
             <div className="card-container">
                 <img className="round" src={srcImg} alt="user" />
                 <h3>{cardName}</h3>
-                <p>{cardYears}</p>
+                <p>Edad: {cardEdad}</p>
                 <p>Movilidad Propia: {movilidad}</p>
                 <p>Disponibilidad: {disponibilidad}</p>
                 <div className="buttons">

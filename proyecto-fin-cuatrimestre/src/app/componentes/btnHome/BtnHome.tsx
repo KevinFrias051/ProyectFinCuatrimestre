@@ -1,5 +1,4 @@
 "use client";
-import "../btnEmpYCand/btnEmpYCand.css";
 import { useRouter, usePathname } from "next/navigation";
 
 export const BtnHome = () => {
@@ -14,10 +13,11 @@ export const BtnHome = () => {
 
   return (
     <>
-      <div className="contBtnHome"></div>
-      <button className="btn btn-info" onClick={() => navegarAHome()}>
-        Home
-      </button>
+      <div className="contBtnHome">
+        <button className="btn" onClick={() => navegarAHome()}>
+          Home
+        </button>
+      </div>
     </>
   );
 };

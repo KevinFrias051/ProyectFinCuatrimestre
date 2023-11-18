@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { BtnEmpYCand } from '@/app/componentes/btnEmpYCand/btnEmpYCand';
+import { BtnEmpYCand } from '@/app/componentes/btnEmpYCand/BtnEmpYCand';
 import { BtnHome } from '@/app/componentes/btnHome/BtnHome';
 
 export const metadata: Metadata = {
