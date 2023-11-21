@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./cardCandidato.css"
 
-export function CardEstilada(props: any) {
+export function CardCandidato(props: any) {
     const { srcImg, cardName, cardEdad, cardMovilidad, cardDisponibilidad, cardSkills, } = props;
     
     const [contrato,setContrato] = useState<String>("Contratar");
