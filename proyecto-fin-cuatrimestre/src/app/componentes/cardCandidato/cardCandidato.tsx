@@ -35,7 +35,7 @@ export function CardCandidato(props: any) {
                 </div>
                 <div className="skills">
                     <ul>
-                        <h6>Skills:</h6>
+                        <h5>Skills:</h5>
                         {cardSkills.map((cardSkills, index) => (
                             <li key={index}>{cardSkills}</li>
                         ))}
