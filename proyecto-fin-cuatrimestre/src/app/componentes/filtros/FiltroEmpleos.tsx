@@ -16,7 +16,7 @@ export function FiltroEmpleos({filtrarEmpleos} : any) {
 
 
  return (
-   <div>
+   <div className='divFiltroEmpleos'>
     <InputLabel id="Disponibilidad">Carga Horaria</InputLabel>
      <Select value={cargaHoraria} onChange={handleDisponibilidadChange}>
        <MenuItem value="Full-time">Full-time</MenuItem>

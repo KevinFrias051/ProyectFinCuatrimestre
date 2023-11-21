@@ -5,6 +5,7 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import Slider from '@mui/material/Slider';
 import InputLabel from '@mui/material/InputLabel';
+import './Filtro.css'
 
 export function Filtro({filtrarCandidatos} : any) {
  
@@ -28,7 +29,7 @@ export function Filtro({filtrarCandidatos} : any) {
  
 
  return (
-   <div>
+   <div className='divFiltroCandidatos'>
     <InputLabel id="Disponibilidad">Disponibilidad</InputLabel>
      <Select value={disponibilidad} onChange={handleDisponibilidadChange}>
        <MenuItem value="Full-time">Full-time</MenuItem>

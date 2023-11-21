@@ -19,14 +19,19 @@ img {
   }
   
   .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
       background-color: #231E39;
       border-radius: 5px;
       box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
       color: #B3B8CD;
       padding-top: 30px;
-      position: relative;
-      min-width: 250px;
-      max-width: 300px;
+      /* position: relative; */
+      width: 350px;
+      max-width: 450px;
       text-align: center;
       margin: 15px;
   }
@@ -51,7 +56,7 @@ img {
       background-color: #1F1A36;
       text-align: left;
       padding: 15px;
-      margin-top: 30px;
+      /* margin-top: 30px; */
   }
   
   .skills ul {
@@ -71,5 +76,5 @@ img {
 
 
   .divCargaArchivo {
-    margin: 10px;
+    margin: 20px;
   }
