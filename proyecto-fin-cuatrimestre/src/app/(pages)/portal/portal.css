@@ -1,6 +1,5 @@
 .divContenedorMain {
     width: 80%;
-    
     margin: 10px auto;
     padding: 10px;
     display: flex;
@@ -11,8 +10,8 @@
 }
 
 .divFiltro {
-    width: 200px;
-    height: 250px;
+    width: 220px;
+    height: 300px;
     border: solid 1px black;
 }
 

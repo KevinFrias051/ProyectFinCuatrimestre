@@ -4,7 +4,8 @@ export interface Candidato {
     edad : number,
     disponibilidad : boolean,
     movilidad : boolean,
-    avatar : any
+    avatar : any,
+    skills : string[],
 };
 
 export interface CandidatoFiltro {

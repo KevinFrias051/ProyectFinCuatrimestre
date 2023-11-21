@@ -1,27 +1,31 @@
 "use client";
 import { useEffect, useState } from "react";
-import { CardEmpleo } from "../../../componentes/card/CardEmpleo";
 import "../portal.css";
-import Empleos from "@/app/model/Empleos";
+import { Empleo, EmpleoFiltro } from "@/app/model/Empleo";
 import { GetEmpleosFromAPI } from "@/app/services/data";
-
+import { FiltroEmpleos } from "@/app/componentes/filtros/FiltroEmpleos";
+import { CardEmpleo } from "@/app/componentes/cardEmpleo/CardEmpleo";
 
 export default function Empleos() {
 
-  const [Empleo, setEmpleo] = useState<Empleos[]>([]);
+  const [Empleo, setEmpleo] = useState<Empleo[]>([]);
+  const [EmpleosAux, setEmpleosAux] = useState<Empleo[]>([]);
 
   const cargarEmpleos = async () => {
     try {
       const rtaEmpleos = await GetEmpleosFromAPI();
-      const listaEmpleos: Empleos[] = rtaEmpleos.Empleos.map((emp: any) => {
+      const listaEmpleos: Empleo[] = rtaEmpleos.map((emp: any) => {
         return {
           id: emp.id,
           descripcion: emp.descripcion,
-          puesto: emp.puesto,
           empresa: emp.empresa,
-          avatar:emp.avatar,
+          avatar: emp.avatar,
+          requisitos: emp.requisitos,
+          cargaHoraria: emp.cargaHoraria,
         }
       });
+      console.log(rtaEmpleos)
+      setEmpleosAux(listaEmpleos)
       setEmpleo(listaEmpleos);
     } catch (error: any) {
       alert(error.message)
@@ -29,34 +33,36 @@ export default function Empleos() {
   }
 
 
-
+  const filtrarEmpleos = (filtroEmpleos: EmpleoFiltro) => {
+    const result = EmpleosAux.filter(emp =>
+      emp.cargaHoraria === filtroEmpleos.cargaHoraria
+    );
+    setEmpleo(result);
+  }
 
 
 
   useEffect(() => {
-
-  })
+    cargarEmpleos();
+  }, [])
 
   return (
     <>
       <div className="divContenedorMain">
         <div className="divFiltro">
-          <p>ACA VA EL FILTRO</p>
+          <FiltroEmpleos filtrarEmpleos={filtrarEmpleos}/>
         </div>
         <div className="divContenedorCard">
-          <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo />
-          {/*  poner mind width para que cuando sean muchas no se achiquen
-         <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo />
-          <CardEmpleo /> */}
+          {Empleo.map((emp: Empleo) => (
+            <CardEmpleo
+              key={emp.id}
+              srcImg={emp.avatar}
+              cardName={emp.empresa}
+              cardDescripcion={emp.descripcion}
+              cardHorario={emp.cargaHoraria}
+              cardRequisitos = {emp.requisitos}
+            />
+          ))}
         </div>
       </div>
     </>
