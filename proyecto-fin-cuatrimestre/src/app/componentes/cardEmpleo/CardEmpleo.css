@@ -47,11 +47,6 @@ img {
       padding: 10px 25px;
   }
   
-  button.primary.ghost {
-      background-color: transparent;
-      color: #02899C;
-  }
-  
   .skills {
       background-color: #1F1A36;
       text-align: left;
@@ -72,4 +67,9 @@ img {
       font-size: 12px;
       margin: 0 7px 7px 0;
       padding: 7px;
+  }
+
+
+  .divCargaArchivo {
+    margin: 10px;
   }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./cardEmpleo.css"
+import "./CardEmpleo.css"
 import CargarArchivo from "../cargarArchivos/CargarArchivos";
 
 export function CardEmpleo(props: any) {
@@ -24,15 +24,15 @@ export function CardEmpleo(props: any) {
                 <p>Descripcion: {cardDescripcion}</p>
                 <p>Carga Horaria: {cargaHorario}</p>
                 <div className="buttons">
-                    <button className="primary" onClick={contratar}>
+                        <button className="primary" onClick={contratar}>
                         {contrato}
                     </button>
-                    <button className="primary ghost">
+                    <div className="divCargaArchivo">
                         <CargarArchivo />
-                    </button>
+                    </div>
                 </div>
                 <div className="skills">
-                    <h6>Requisitos: </h6>
+                    <h5>Requisitos: </h5>
                     <ul>
                         {cardRequisitos.map((cardRequisitos, index) => (
                             <li key={index}>{cardRequisitos}</li>

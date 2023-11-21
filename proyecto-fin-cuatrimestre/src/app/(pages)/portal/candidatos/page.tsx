@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { CardCandidato } from "../../../componentes/cardCandidato/CardCandidato";
+import { CardCandidato } from "../../../componentes/cardCandidato/cardCandidato";
 import "../portal.css";
 import { Candidato, CandidatoFiltro } from "@/app/model/Candidato";
 import { GetCandidatosFromAPI } from "@/app/services/data";

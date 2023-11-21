@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./cardCandidato.css"
+import "./CardCandidato.css"
 
 export function CardCandidato(props: any) {
     const { srcImg, cardName, cardEdad, cardMovilidad, cardDisponibilidad, cardSkills } = props;
@@ -35,7 +35,7 @@ export function CardCandidato(props: any) {
                 </div>
                 <div className="skills">
                     <ul>
-                        <h6>Skills:</h6>
+                        <h5>Skills:</h5>
                         {cardSkills.map((cardSkills, index) => (
                             <li key={index}>{cardSkills}</li>
                         ))}
