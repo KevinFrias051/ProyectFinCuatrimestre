@@ -3,43 +3,40 @@ import "./cardEmpleo.css"
 import CargarArchivo from "../cargarArchivos/CargarArchivos";
 
 export function CardEmpleo(props: any) {
-    const { srcImg, cardName, cardPuesto, cardDescripcion, cardRequisitos,cardHorario } = props;
-    
-    const [contrato,setContrato] = useState<String>("Postularse");
+    const { srcImg, cardName, cardDescripcion, cardRequisitos, cardHorario } = props;
+
+    const [contrato, setContrato] = useState<String>("Postularse");
     const contratar = () => {
-        if (contrato == "Postularse"){
-        setContrato("Renunciar");
+        if (contrato == "Postularse") {
+            setContrato("Renunciar");
         } else {
             setContrato("Postularse");
         }
     }
 
-
+    const cargaHorario: string = cardHorario ? "Full-Time" : "Part-Time";
 
     return (
         <>
             <div className="card-container">
                 <img className="round" src={srcImg} alt="user" />
                 <h3>{cardName}</h3>
-                <p>Puesto: {cardPuesto}</p>
                 <p>Descripcion: {cardDescripcion}</p>
-                <p>Carga Horaria: {cardHorario}</p>
+                <p>Carga Horaria: {cargaHorario}</p>
                 <div className="buttons">
                     <button className="primary" onClick={contratar}>
                         {contrato}
                     </button>
                     <button className="primary ghost">
-                        <CargarArchivo/>
+                        <CargarArchivo />
                     </button>
                 </div>
                 <div className="skills">
+                    <h6>Requisitos: </h6>
                     <ul>
-                        <li>Requisitos</li>
-                        <li>Requisitos</li>
-                        <li>Requisitos</li>
-                        <li>Requisitos</li>
-                        <li>Requisitos</li>
-                        <li>Requisitos</li>
+                        {cardRequisitos.map((cardRequisitos, index) => (
+                            <li key={index}>{cardRequisitos}</li>
+                        ))}
                     </ul>
                 </div>
             </div>

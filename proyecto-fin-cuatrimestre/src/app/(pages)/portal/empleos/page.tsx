@@ -14,11 +14,10 @@ export default function Empleos() {
   const cargarEmpleos = async () => {
     try {
       const rtaEmpleos = await GetEmpleosFromAPI();
-      const listaEmpleos: Empleo[] = rtaEmpleos.Empleos.map((emp: any) => {
+      const listaEmpleos: Empleo[] = rtaEmpleos.map((emp: any) => {
         return {
           id: emp.id,
           descripcion: emp.descripcion,
-          puesto: emp.puesto,
           empresa: emp.empresa,
           avatar: emp.avatar,
           requisitos: emp.requisitos,
@@ -36,7 +35,7 @@ export default function Empleos() {
 
   const filtrarEmpleos = (filtroEmpleos: EmpleoFiltro) => {
     const result = EmpleosAux.filter(emp =>
-      emp.puesto === filtroEmpleos.puesto
+      emp.cargaHoraria === filtroEmpleos.cargaHoraria
     );
     setEmpleo(result);
   }
@@ -59,7 +58,6 @@ export default function Empleos() {
               key={emp.id}
               srcImg={emp.avatar}
               cardName={emp.empresa}
-              cardPuesto={emp.puesto}
               cardDescripcion={emp.descripcion}
               cardHorario={emp.cargaHoraria}
               cardRequisitos = {emp.requisitos}

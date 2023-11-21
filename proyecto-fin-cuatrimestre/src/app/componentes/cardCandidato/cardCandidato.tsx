@@ -2,19 +2,19 @@ import { useState } from "react";
 import "./cardCandidato.css"
 
 export function CardCandidato(props: any) {
-    const { srcImg, cardName, cardEdad, cardMovilidad, cardDisponibilidad, cardSkills, } = props;
-    
-    const [contrato,setContrato] = useState<String>("Contratar");
+    const { srcImg, cardName, cardEdad, cardMovilidad, cardDisponibilidad, cardSkills } = props;
+
+    const [contrato, setContrato] = useState<String>("Contratar");
     const contratar = () => {
-        if (contrato == "Contratar"){
-        setContrato("Despedir");
+        if (contrato == "Contratar") {
+            setContrato("Despedir");
         } else {
             setContrato("Contratar");
         }
     }
 
-    const disponibilidad : string = cardDisponibilidad ? "Full-Time" : "Part-Time";
-    const movilidad : string = cardMovilidad ? "Si" : "No";
+    const disponibilidad: string = cardDisponibilidad ? "Full-Time" : "Part-Time";
+    const movilidad: string = cardMovilidad ? "Si" : "No";
 
 
     return (
@@ -35,12 +35,10 @@ export function CardCandidato(props: any) {
                 </div>
                 <div className="skills">
                     <ul>
-                        <li>Front End Development</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Node</li>
+                        <h6>Skills:</h6>
+                        {cardSkills.map((cardSkills, index) => (
+                            <li key={index}>{cardSkills}</li>
+                        ))}
                     </ul>
                 </div>
             </div>

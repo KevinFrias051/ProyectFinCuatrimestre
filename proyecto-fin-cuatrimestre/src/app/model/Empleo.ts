@@ -1,7 +1,6 @@
 export interface Empleo {
     id: number,
     descripcion : string,
-    puesto : string,
     empresa : string,
     avatar : any
     requisitos : string[];

@@ -25,6 +25,7 @@ export default function Candidatos() {
                     disponibilidad: cand.disponibilidad,
                     movilidad: cand.movilidad,
                     avatar: cand.avatar,
+                    skills: cand.skills,
                 }
             });
             console.log(rtaCandidato);
@@ -68,6 +69,7 @@ export default function Candidatos() {
                             cardEdad={cand.edad}
                             cardMovilidad={cand.movilidad}
                             cardDisponibilidad={cand.disponibilidad}
+                            cardSkills = {cand.skills}
                         />
                     ))}
                 </div>
