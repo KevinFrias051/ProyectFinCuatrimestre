@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from 'react';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
@@ -9,16 +8,16 @@ import './Filtro.css'
 
 export function Filtro({filtrarCandidatos} : any) {
  
- const [disponibilidad, setDisponibilidad] = useState(false);
- const [movilidad, setMovilidad] = useState(false);
+ const [disponibilidad, setDisponibilidad] = useState<boolean>();
+ const [movilidad, setMovilidad] = useState<boolean>();
  const [edad, setEdad] = useState([18, 65]);
 
  const handleDisponibilidadChange = (e) => {
-   setDisponibilidad(e.target.value);
+  e.target.value == "Full-Time" ? setDisponibilidad(true) : setDisponibilidad(false);
  };
 
  const handleMovilidadChange = (e) => {
-   setMovilidad(e.target.value);
+  e.target.value == "Si" ? setMovilidad(true) : setMovilidad(false);
  };
 
  const handleEdadChange = (e) => {
@@ -32,7 +31,7 @@ export function Filtro({filtrarCandidatos} : any) {
    <div className='divFiltroCandidatos'>
     <InputLabel id="Disponibilidad">Disponibilidad</InputLabel>
      <Select value={disponibilidad} onChange={handleDisponibilidadChange}>
-       <MenuItem value="Full-time">Full-time</MenuItem>
+       <MenuItem value="Full-Time">Full-time</MenuItem>
        <MenuItem value="Part-Time">Part-Time</MenuItem>
      </Select>
      <InputLabel id="Movilidad">Movilidad</InputLabel>

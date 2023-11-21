@@ -28,7 +28,6 @@ export default function Candidatos() {
                     skills: cand.skills,
                 }
             });
-            console.log(rtaCandidato);
             setCandidatosAux(listaCandidatos)
             setCandidatos(listaCandidatos);
         } catch (error: any) {
@@ -40,8 +39,8 @@ export default function Candidatos() {
         console.log(filtroCandidatos);
         const result = CandidatoAux.filter(cand =>
             /* cand.name.includes(search) || */
-            cand.disponibilidad === filtroCandidatos.disponibilidad ||
-            cand.movilidad === filtroCandidatos.movilidad ||
+            cand.disponibilidad === filtroCandidatos.disponibilidad &&
+            cand.movilidad === filtroCandidatos.movilidad &&
             cand.edad >= filtroCandidatos.edad[0] && cand.edad <= filtroCandidatos.edad[1]
 
         );
