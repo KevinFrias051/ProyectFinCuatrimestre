@@ -49,8 +49,8 @@
     align-items: center;
 }
 
-h1{
-    color: #1f5bab;
+.divTitulo h1{
+color: #1f5bab;
 font-size: 40px;
 font-weight: bold;
 }
