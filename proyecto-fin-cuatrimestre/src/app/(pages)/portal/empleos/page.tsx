@@ -52,7 +52,9 @@ export default function Empleos() {
     <>
       <div className="divContenedorMain">
         <div className="divFiltro">
-          <FiltroEmpleos filtrarEmpleos={filtrarEmpleos} />
+          <FiltroEmpleos filtrarEmpleos={filtrarEmpleos} 
+          cargarEmpleos={cargarEmpleos}
+          />
         </div>
         <div className="divContenedorCard">
           {Empleo.map((emp: Empleo) => (
@@ -65,6 +67,9 @@ export default function Empleos() {
               cardRequisitos={emp.requisitos}
             />
           ))}
+        </div>
+        <div>
+          <button className="btn" onClick={cargarEmpleos} >Reset</button>
         </div>
       </div>
     </>

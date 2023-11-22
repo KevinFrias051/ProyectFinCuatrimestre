@@ -5,7 +5,7 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
 
-export function FiltroEmpleos({filtrarEmpleos} : any) {
+export function FiltroEmpleos({filtrarEmpleos, cargarEmpleos} : any) {
  
  const [cargaHoraria, setCargaHoraria] = useState <boolean>();
  
@@ -21,6 +21,10 @@ export function FiltroEmpleos({filtrarEmpleos} : any) {
        <MenuItem value="Part-Time">Part-Time</MenuItem>
      </Select>
      <button className='btn' onClick = {()=>filtrarEmpleos({cargaHoraria,puesto:null})}>Buscar</button>
+     <div>
+        <button className="btn" onClick={cargarEmpleos} >Reset</button>
+      </div>
    </div>
+   
  );
 }

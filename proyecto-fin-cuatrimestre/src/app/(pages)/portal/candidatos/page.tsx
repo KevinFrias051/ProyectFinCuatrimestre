@@ -4,7 +4,7 @@ import { CardCandidato } from "../../../componentes/cardCandidato/cardCandidato"
 import "../portal.css";
 import { Candidato, CandidatoFiltro } from "@/app/model/Candidato";
 import { GetCandidatosFromAPI } from "@/app/services/data";
-import { Buscador } from "../../../componentes/buscador/Buscador";
+// import { Buscador } from "../../../componentes/buscador/Buscador";
 import { Filtro } from "../../../componentes/filtros/FiltroCandidatos";
 
 export default function Candidatos() {
@@ -34,14 +34,13 @@ export default function Candidatos() {
 
   const filtrarCandidatos = (filtroCandidatos: CandidatoFiltro) => {
     const result = CandidatoAux.filter((cand) => {
-      /* cand.name.includes(search) || */
-      // Verificar si la propiedad de disponibilidad está definida en el filtro
+
       const disponibilidadCheck =
-        filtroCandidatos.disponibilidad !== undefined ? cand.disponibilidad === filtroCandidatos.disponibilidad: true;
-      // Verificar si la propiedad de movilidad está definida en el filtro
-      const movilidadCheck = 
+        filtroCandidatos.disponibilidad !== undefined ? cand.disponibilidad === filtroCandidatos.disponibilidad : true;
+
+      const movilidadCheck =
         filtroCandidatos.movilidad !== undefined ? cand.movilidad === filtroCandidatos.movilidad : true;
-      // Verificar si la propiedad de edad está definida en el filtro
+
       const edadCheck =
         filtroCandidatos.edad !== undefined && filtroCandidatos.edad.length === 2 ? cand.edad >= filtroCandidatos.edad[0] && cand.edad <= filtroCandidatos.edad[1]
           : true;
@@ -49,7 +48,7 @@ export default function Candidatos() {
     });
 
     setCandidatos(result);
-    console.log("Soy resultado",result);
+    console.log("Soy resultado", result);
   };
 
   useEffect(() => {
@@ -61,7 +60,9 @@ export default function Candidatos() {
       <div className="divContenedorMain">
         <div className="divFiltro">
           {/* <Buscador setSearch={setSearch} /> */}
-          <Filtro filtrarCandidatos={filtrarCandidatos} />
+          <Filtro filtrarCandidatos={filtrarCandidatos} 
+            cargarCandidato={cargarCandidato}
+          />
         </div>
         <div className="divContenedorCard">
           {Candidato.map((cand: Candidato) => (
