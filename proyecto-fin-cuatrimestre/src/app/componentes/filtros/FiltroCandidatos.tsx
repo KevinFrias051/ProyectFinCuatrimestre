@@ -39,12 +39,10 @@ export function Filtro({ filtrarCandidatos, cargarCandidato }: any) {
         <MenuItem value="Si">Si</MenuItem>
         <MenuItem value="No">No</MenuItem>
       </Select>
-      <InputLabel id="RangoEdad">Rango de Edad (18-65)</InputLabel>
-      <Slider value={edad} onChange={handleEdadChange} min={18} max={65} valueLabelDisplay="auto" />
+      <InputLabel id="RangoEdad">Edad (18-65)</InputLabel>
+      <Slider className='sliderEdad' value={edad} onChange={handleEdadChange} min={18} max={65} valueLabelDisplay="auto" />
       <button className='btn' onClick={() => filtrarCandidatos({ name: null, edad, disponibilidad, movilidad })}>Buscar</button>
-      <div>
-        <button className="btn" onClick={cargarCandidato} >Reset</button>
-      </div>
+      <button className="btn" onClick={cargarCandidato} >Reset</button>
     </div>
   );
 }
