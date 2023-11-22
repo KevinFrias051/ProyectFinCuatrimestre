@@ -7,7 +7,6 @@ import { FiltroEmpleos } from "@/app/componentes/filtros/FiltroEmpleos";
 import { CardEmpleo } from "@/app/componentes/cardEmpleo/CardEmpleo";
 
 export default function Empleos() {
-
   const [Empleo, setEmpleo] = useState<Empleo[]>([]);
   const [EmpleosAux, setEmpleosAux] = useState<Empleo[]>([]);
 
@@ -22,35 +21,38 @@ export default function Empleos() {
           avatar: emp.avatar,
           requisitos: emp.requisitos,
           cargaHoraria: emp.cargaHoraria,
-        }
+        };
       });
-      console.log(rtaEmpleos)
-      setEmpleosAux(listaEmpleos)
+      console.log(rtaEmpleos);
+      setEmpleosAux(listaEmpleos);
       setEmpleo(listaEmpleos);
     } catch (error: any) {
-      alert(error.message)
+      alert(error.message);
     }
-  }
-
+  };
 
   const filtrarEmpleos = (filtroEmpleos: EmpleoFiltro) => {
-    const result = EmpleosAux.filter(emp =>
-      emp.cargaHoraria === filtroEmpleos.cargaHoraria
-    );
+    const result = EmpleosAux.filter((emp) => {
+      const cargaHorariaCheck = 
+      filtroEmpleos.cargaHoraria !== undefined
+        ? emp.cargaHoraria === filtroEmpleos.cargaHoraria
+        : true;
+        return cargaHorariaCheck
+    });
+    
     setEmpleo(result);
-  }
-
-
+    console.log("Soy resultado", result);
+  };
 
   useEffect(() => {
     cargarEmpleos();
-  }, [])
+  }, []);
 
   return (
     <>
       <div className="divContenedorMain">
         <div className="divFiltro">
-          <FiltroEmpleos filtrarEmpleos={filtrarEmpleos}/>
+          <FiltroEmpleos filtrarEmpleos={filtrarEmpleos} />
         </div>
         <div className="divContenedorCard">
           {Empleo.map((emp: Empleo) => (
@@ -60,7 +62,7 @@ export default function Empleos() {
               cardName={emp.empresa}
               cardDescripcion={emp.descripcion}
               cardHorario={emp.cargaHoraria}
-              cardRequisitos = {emp.requisitos}
+              cardRequisitos={emp.requisitos}
             />
           ))}
         </div>

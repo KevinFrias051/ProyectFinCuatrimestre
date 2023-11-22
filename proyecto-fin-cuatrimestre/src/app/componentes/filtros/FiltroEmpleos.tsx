@@ -7,19 +7,17 @@ import InputLabel from '@mui/material/InputLabel';
 
 export function FiltroEmpleos({filtrarEmpleos} : any) {
  
- const [cargaHoraria, setCargaHoraria] = useState("");
+ const [cargaHoraria, setCargaHoraria] = useState <boolean>();
  
-
  const handleDisponibilidadChange = (e) => {
-    setCargaHoraria(e.target.value);
+  e.target.value == "Full-Time" ? setCargaHoraria(true) : setCargaHoraria(false);
  };
-
 
  return (
    <div className='divFiltroEmpleos'>
     <InputLabel id="Disponibilidad">Carga Horaria</InputLabel>
      <Select value={cargaHoraria} onChange={handleDisponibilidadChange}>
-       <MenuItem value="Full-time">Full-time</MenuItem>
+       <MenuItem value="Full-Time">Full-time</MenuItem>
        <MenuItem value="Part-Time">Part-Time</MenuItem>
      </Select>
      <button className='btn' onClick = {()=>filtrarEmpleos({cargaHoraria,puesto:null})}>Buscar</button>
