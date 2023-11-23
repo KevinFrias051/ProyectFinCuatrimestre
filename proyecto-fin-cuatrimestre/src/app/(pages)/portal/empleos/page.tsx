@@ -68,9 +68,6 @@ export default function Empleos() {
             />
           ))}
         </div>
-        <div>
-          <button className="btn" onClick={cargarEmpleos} >Reset</button>
-        </div>
       </div>
     </>
   );
