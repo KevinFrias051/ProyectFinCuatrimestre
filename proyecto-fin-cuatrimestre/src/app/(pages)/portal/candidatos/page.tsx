@@ -7,6 +7,7 @@ import { GetCandidatosFromAPI } from "@/app/services/data";
 // import { Buscador } from "../../../componentes/buscador/Buscador";
 import { Filtro } from "../../../componentes/filtros/FiltroCandidatos";
 
+//llama a la funcion que trae los candidatos del api y los carga en pantalla
 export default function Candidatos() {
   const [Candidato, setCandidatos] = useState<Candidato[]>([]);
   const [CandidatoAux, setCandidatosAux] = useState<Candidato[]>([]);
@@ -31,7 +32,7 @@ export default function Candidatos() {
       alert(error.message);
     }
   };
-
+  //filtro de candidatos
   const filtrarCandidatos = (filtroCandidatos: CandidatoFiltro) => {
     const result = CandidatoAux.filter((cand) => {
 
@@ -48,7 +49,7 @@ export default function Candidatos() {
     });
 
     setCandidatos(result);
-    console.log("Soy resultado", result);
+    /* console.log("Soy resultado", result); */
   };
 
   useEffect(() => {

@@ -10,6 +10,7 @@ export default function Empleos() {
   const [Empleo, setEmpleo] = useState<Empleo[]>([]);
   const [EmpleosAux, setEmpleosAux] = useState<Empleo[]>([]);
 
+  //llama a la funcion que trae los empleos del api y los carga en pantalla
   const cargarEmpleos = async () => {
     try {
       const rtaEmpleos = await GetEmpleosFromAPI();
@@ -23,14 +24,15 @@ export default function Empleos() {
           cargaHoraria: emp.cargaHoraria,
         };
       });
-      console.log(rtaEmpleos);
+      /* console.log(rtaEmpleos); */
       setEmpleosAux(listaEmpleos);
       setEmpleo(listaEmpleos);
     } catch (error: any) {
       alert(error.message);
     }
   };
-
+  
+  //Filtro de empleos
   const filtrarEmpleos = (filtroEmpleos: EmpleoFiltro) => {
     const result = EmpleosAux.filter((emp) => {
       const cargaHorariaCheck = 
@@ -41,7 +43,7 @@ export default function Empleos() {
     });
     
     setEmpleo(result);
-    console.log("Soy resultado", result);
+    /* console.log("Soy resultado", result); */
   };
 
   useEffect(() => {
