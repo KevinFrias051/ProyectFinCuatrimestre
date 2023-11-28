@@ -1,16 +1,16 @@
-.divFiltroCandidatos{
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
- padding: 5px;
- gap: 20px;
- width: 100%;
- 
+.divFiltroCandidatos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  gap: 20px;
+  width: 100%;
+
 }
 
-.divFiltroEmpleos{
+.divFiltroEmpleos {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,9 +19,12 @@
   padding: 5px;
   gap: 20px;
   width: 100%;
- }
+}
 
- .sliderEdad{
+.selectorFiltro{
+width: 110px !important;
+}
+
+.sliderEdad {
   width: 100px;
- }
-
+}

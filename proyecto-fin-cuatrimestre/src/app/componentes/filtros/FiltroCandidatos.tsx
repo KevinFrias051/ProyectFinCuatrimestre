@@ -30,14 +30,16 @@ export function Filtro({ filtrarCandidatos, cargarCandidato }: any) {
   return (
     <div className='divFiltroCandidatos'>
       <InputLabel id="Disponibilidad">Disponibilidad</InputLabel>
-      <Select value={disponibilidad} onChange={handleDisponibilidadChange}>
-        <MenuItem value="Full-Time">Full-time</MenuItem>
-        <MenuItem value="Part-Time">Part-Time</MenuItem>
+      <Select className='selectorFiltro' value={disponibilidad} defaultValue={"Seleccione"} onChange={handleDisponibilidadChange}>
+        <MenuItem className='selectorFiltro' value="Seleccione">Seleccione</MenuItem>
+        <MenuItem className='selectorFiltro' value="Full-Time">Full-Time</MenuItem>
+        <MenuItem className='selectorFiltro' value="Part-Time">Part-Time</MenuItem>
       </Select>
       <InputLabel id="Movilidad">Movilidad</InputLabel>
-      <Select label="Movilidad" onChange={handleMovilidadChange}>
-        <MenuItem value="Si">Si</MenuItem>
-        <MenuItem value="No">No</MenuItem>
+      <Select className='selectorFiltro' label="Movilidad" defaultValue={"Seleccione"} onChange={handleMovilidadChange}>
+        <MenuItem className='selectorFiltro' value="Seleccione">Seleccione</MenuItem>
+        <MenuItem className='selectorFiltro' value="Si">Si</MenuItem>
+        <MenuItem className='selectorFiltro' value="No">No</MenuItem>
       </Select>
       <InputLabel id="RangoEdad">Edad (18-65)</InputLabel>
       <Slider className='sliderEdad' value={edad} onChange={handleEdadChange} min={18} max={65} valueLabelDisplay="auto" />
