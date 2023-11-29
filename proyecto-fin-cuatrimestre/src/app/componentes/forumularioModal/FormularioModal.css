@@ -1,0 +1,17 @@
+.divBody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divCargaArchivo{
+  margin-top: 10px;
+}
+
+.labelEstilo{
+  margin-top: 10px;
+}
+
+.btnPostularme{
+max-width: 200px;
+}

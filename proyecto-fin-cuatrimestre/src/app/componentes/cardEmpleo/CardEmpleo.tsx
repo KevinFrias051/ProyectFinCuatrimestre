@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./CardEmpleo.css"
 import CargarArchivo from "../cargarArchivos/CargarArchivos";
+import { FormularioModal } from '../forumularioModal/FormularioModal'
 
 export function CardEmpleo(props: any) {
     const { srcImg, cardName, cardDescripcion, cardRequisitos, cardHorario } = props;
@@ -24,12 +25,13 @@ export function CardEmpleo(props: any) {
                 <p>Descripcion: {cardDescripcion}</p>
                 <p>Carga Horaria: {cargaHorario}</p>
                 <div className="buttons">
-                        <button className="primary" onClick={contratar}>
+                    {/* <button className="primary" onClick={contratar}>
                         {contrato}
-                    </button>
-                    <div className="divCargaArchivo">
+                    </button> */}
+                <FormularioModal />
+                    {/* <div className="divCargaArchivo">
                         <CargarArchivo />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="skills">
                     <h5>Requisitos: </h5>
