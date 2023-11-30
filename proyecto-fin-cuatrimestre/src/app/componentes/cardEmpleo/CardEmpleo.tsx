@@ -6,15 +6,6 @@ import { FormularioModal } from '../forumularioModal/FormularioModal'
 export function CardEmpleo(props: any) {
     const { srcImg, cardName, cardDescripcion, cardRequisitos, cardHorario } = props;
 
-    const [contrato, setContrato] = useState<String>("Postularse");
-    const contratar = () => {
-        if (contrato == "Postularse") {
-            setContrato("Renunciar");
-        } else {
-            setContrato("Postularse");
-        }
-    }
-
     const cargaHorario: string = cardHorario ? "Full-Time" : "Part-Time";
 
     return (
@@ -25,13 +16,9 @@ export function CardEmpleo(props: any) {
                 <p>Descripcion: {cardDescripcion}</p>
                 <p>Carga Horaria: {cargaHorario}</p>
                 <div className="buttons">
-                    {/* <button className="primary" onClick={contratar}>
-                        {contrato}
-                    </button> */}
-                <FormularioModal />
-                    {/* <div className="divCargaArchivo">
-                        <CargarArchivo />
-                    </div> */}
+                <FormularioModal 
+                empleo={cardName}
+                />
                 </div>
                 <div className="skills">
                     <h5>Requisitos: </h5>
