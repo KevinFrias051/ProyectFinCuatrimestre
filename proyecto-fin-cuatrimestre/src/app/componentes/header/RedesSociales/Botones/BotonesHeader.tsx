@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "./redesHeader.css";
+import "./RedesHeader.css";
 
 export const BotonRedesHeader = (props: any) => {
   const { imageSrc, linkTo, altText } = props;

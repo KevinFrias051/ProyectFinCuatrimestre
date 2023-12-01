@@ -1,14 +1,12 @@
-import React from 'react';
+"use client";
+import React from "react";
 
+//Componente cargar archivos
 function CargarArchivo() {
- const handleFileUpload = (e) => {
-   const files = e.target.files;
-   // Aquí puedes manejar los archivos cargados
- };
-
- return (
-   <input type="file" multiple onChange={handleFileUpload} />
- );
+  const handleFileUpload = (e) => {
+    //Constante para almacenar y manejar los archivos cargados
+    const files = e.target.files;
+  };
+  return <input type="file" multiple onChange={handleFileUpload} />;
 }
-
 export default CargarArchivo;

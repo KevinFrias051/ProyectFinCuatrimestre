@@ -1,6 +1,7 @@
 "use client";
 import { useRouter, usePathname } from "next/navigation";
 
+//Ruteo para navegar de Empleos y Candidatos a Home
 export const BtnHome = () => {
   const router = useRouter();
   const pathname = usePathname();
@@ -11,6 +12,7 @@ export const BtnHome = () => {
     }
   };
 
+  //Boton para navegar a Home
   return (
     <>
       <div className="contBtnHome">

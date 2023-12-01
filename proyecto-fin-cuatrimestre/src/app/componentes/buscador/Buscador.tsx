@@ -1,15 +1,17 @@
 "use client";
-import { useState } from 'react';
-import TextField from '@mui/material/TextField';
+import { useState } from "react";
+import TextField from "@mui/material/TextField";
 
+//Componente sin uso
+//Funcionalidad: Buscador
 export function Buscador() {
- const [search, setSearch] = useState<string>('');
+  const [search, setSearch] = useState<string>("");
 
- const handleSearchChange = (event) => {
-   setSearch(event.target.value);
- };
+  const handleSearchChange = (event) => {
+    setSearch(event.target.value);
+  };
 
- return (
-   <TextField value={search} onChange={handleSearchChange} label="Buscar" />
- );
+  return (
+    <TextField value={search} onChange={handleSearchChange} label="Buscar" />
+  );
 }
