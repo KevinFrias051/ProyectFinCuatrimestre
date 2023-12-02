@@ -26,5 +26,5 @@ width: 110px !important;
 }
 
 .sliderEdad {
-  width: 90px;
+  max-width: 90px;
 }
