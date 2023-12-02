@@ -1,5 +1,4 @@
 'use client'
-
 import React from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,24 +6,28 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import CargarArchivo from '../cargarArchivos/CargarArchivos';
 import './FormularioModal.css';
 
-export function FormularioModal(props:any) {
+// Componente de Formulario para poder postularse a un Empleo y cargar el CV
+export function FormularioModal(props: any) {
 
+  // Datos que obtiene procesara el fromulario
   interface Client {
     nombre: string;
     apellido: string;
     email: string;
   }
 
+  // errores que utilizara el componente Formulario
   const { register, handleSubmit, reset, formState: { errors } } = useForm<Client>();
 
+  // Funcion para imprimir por consola los datos ingresados al Formulario para simular un envio de datos
   const onSubmit: SubmitHandler<Client> = (data) => {
-    console.log('Nombre Trabajo Aplicado:',props.empleo);
+    console.log('Nombre Trabajo Aplicado:', props.empleo);
     console.log('Candidato postulado:', data.nombre, data.apellido);
-    
     console.log('Email:', data.email);
     reset();
   };
 
+  // Renderizacion del componente Formulario.
   return (
     <div className="App">
       <div className="container">
@@ -45,6 +48,7 @@ export function FormularioModal(props:any) {
                       <label className="font-weight-bold text-small" htmlFor="firstname">
                         Nombre<span className="text-primary ml-1">*</span>
                       </label>
+                      {/* Input para Nombre con validacion */}
                       <input
                         {...register('nombre', {
                           required: 'El nombre es requerido',
@@ -55,12 +59,14 @@ export function FormularioModal(props:any) {
                         type="text"
                         placeholder="..."
                       />
+                      {/* En caso de no ingresar datos validos al imput se genera y visualiza el error */}
                       {errors.nombre && <p className="text-danger">{errors.nombre.message}</p>}
                     </div>
                     <div className="form-group col-lg-6">
                       <label className="font-weight-bold text-small" htmlFor="lastname">
                         Apellido<span className="text-primary ml-1">*</span>
                       </label>
+                      {/* Input para Apellido con validacion */}
                       <input
                         {...register('apellido', {
                           required: 'El apellido es requerido',
@@ -71,12 +77,14 @@ export function FormularioModal(props:any) {
                         type="text"
                         placeholder="..."
                       />
+                      {/* En caso de no ingresar datos validos al imput se genera y visualiza el error */}
                       {errors.apellido && <p className="text-danger">{errors.apellido.message}</p>}
                     </div>
                     <div className="form-group col-lg-12">
                       <label className="font-weight-bold text-small labelEstilo" htmlFor="email">
                         Email<span className="text-primary ml-1">*</span>
                       </label>
+                      {/* Input para email con validacion */}
                       <input
                         {...register('email', {
                           required: 'El email es requerido',
@@ -90,14 +98,18 @@ export function FormularioModal(props:any) {
                         type="email"
                         placeholder="..."
                       />
+                      {/* En caso de no ingresar datos validos al imput se genera y visualiza el error */}
                       {errors.email && <p className="text-danger">{errors.email.message}</p>}
                     </div>
+                    {/* Componente de Carga de Archivos */}
                     <div className="divCargaArchivo">
                       <CargarArchivo />
                     </div>
-                    <button type="submit" className="btn btn-primary btnPostularme" onClick={() => { }}>
+
+                    <button type="submit" className="btn btn-primary btnPostularme" >
                       Postularme
                     </button>
+
                   </div>
                 </form>
               </div>

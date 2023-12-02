@@ -7,9 +7,7 @@ export interface Empleo {
     cargaHoraria : number;
 };
 
-
-
 export interface EmpleoFiltro {
     puesto: string;
     cargaHoraria : number;
-}
+};

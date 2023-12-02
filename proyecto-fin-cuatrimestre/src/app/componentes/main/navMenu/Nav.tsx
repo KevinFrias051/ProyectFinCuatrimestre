@@ -1,11 +1,13 @@
 "use client"
-
 import React from "react";
 import "./Nav.css";
-import { iconsBotonNavs } from "../../../../../public//iconosNavMenu/Imagenes";
+import { iconsBotonNavs } from "../../../../../public/iconosNavMenu/Imagenes";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
+// Barra de navegacion dentro del mail
+// Unico boton que sirve es Empleos
+// Renderiza las imagenes y el texto de cada boton.
 export default function BrandExample() {
   return (
     <>
@@ -21,7 +23,6 @@ export default function BrandExample() {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              {/* Salud */}
               <p>Salud</p>
             </div>
           </Navbar.Brand>
@@ -35,11 +36,11 @@ export default function BrandExample() {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              {/* Licencias */}
               <p>Licencias</p>
             </div>
           </Navbar.Brand>
 
+          {/* Unico boton de navegacion que tiene utilidad, no lleva a la seccion de empleos */}
           <Navbar.Brand href="../../portal/empleos">
             <div className="DivNavBarItem">
               <img
@@ -49,7 +50,6 @@ export default function BrandExample() {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              {/* Empleo */}
               <p>Empleo</p>
             </div>
           </Navbar.Brand>
@@ -63,7 +63,6 @@ export default function BrandExample() {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              {/* Tramites */}
               <p>Tramites</p>
             </div>
           </Navbar.Brand>
@@ -77,7 +76,6 @@ export default function BrandExample() {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              {/* Secretaria */}
               <p>Secretaria</p>
             </div>
           </Navbar.Brand>
@@ -87,60 +85,3 @@ export default function BrandExample() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-// CODIGO ORIGINAL
-// export const Nav = () => {
-//   return (
-//     <>
-//       <div>
-//         <nav className="navContenedor">
-//           <BotonNav
-//             imagenSrc={iconsBotonNavs.busquedaDeTrabajo.src}
-//             linkTo="https://invertir.olavarria.gov.ar/servicios/portal-de-empleo/"
-//             altText="Empleos"
-//           />
-//           <BotonNav
-//             imagenSrc={iconsBotonNavs.licencia.src}
-//             linkTo="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/#licencias-de-conducir"
-//             altText="Licensias"
-//           />
-//              <BotonNav
-//             imagenSrc={iconsBotonNavs.licencia.src}
-//             linkTo="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/#licencias-de-conducir"
-//             altText="Licensias"
-//           />
-//              <BotonNav
-//             imagenSrc={iconsBotonNavs.licencia.src}
-//             linkTo="https://gobiernoabierto.olavarria.gov.ar/tramites-y-servicios/#licencias-de-conducir"
-//             altText="Licensias"
-//           />
-//           <BotonNav
-//             imagenSrc={iconsBotonNavs.turnos.src}
-//             linkTo="https://www.docturno.com/"
-//             altText="Turnos"
-//           />
-//           <BotonNav
-//             imagenSrc={iconsBotonNavs.impuestos.src}
-//             linkTo="https://www.olavarria.gov.ar/gobierno-local/dependencias-municipales/"
-//             altText="Impuestos"
-//           />
-//           <BotonNav
-//             imagenSrc={iconsBotonNavs.secretaria.src}
-//             linkTo="https://www.w3schools.com/js/js_window_location.asp.com"
-//             altText="Secretaria"
-//           />
-//         </nav>
-//       </div>
-//     </>
-//   );
-// };

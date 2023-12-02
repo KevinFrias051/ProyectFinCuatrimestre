@@ -3,11 +3,11 @@ import { BotonRedesHeader } from "./Botones/BotonesHeader";
 import "./ContRedesSociales.css";
 import { iconRedes } from "../../../../../public/redes/Redes.js";
 
-
 export const ContRedesSociales = () => {
+  // Renderiza el contenedor de las redes sociales
+  // utiliza un rooteo de tipo Linkto
   return (
     <>
-      
         <nav className="ContRedesSociales">
           <BotonRedesHeader
             imageSrc = {iconRedes.Facebook.src}

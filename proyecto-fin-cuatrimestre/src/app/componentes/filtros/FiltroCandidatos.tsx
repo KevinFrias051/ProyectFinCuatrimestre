@@ -19,12 +19,9 @@ export function Filtro({ filtrarCandidatos, cargarCandidato }: any) {
   const handleDisponibilidadChange = (e) => {
     if (e.target.value === "") {
       setDisponibilidad(undefined);
-    } else {
-      e.target.value === "Full-Time"
-        ? setDisponibilidad(true)
-        : setDisponibilidad(false);
-    }
-  };
+    } else { 
+      e.target.value === "Full-Time"  ? setDisponibilidad(true)  : setDisponibilidad(false); 
+    }};
 
   //Funcion donde evaluamos la movilidad seleccionada para pasarle al filtro
   const handleMovilidadChange = (e) => {
@@ -50,6 +47,7 @@ export function Filtro({ filtrarCandidatos, cargarCandidato }: any) {
 
   return (
     <div className="divFiltroCandidatos">
+
       <InputLabel id="Disponibilidad">Disponibilidad</InputLabel>
       <Select
         className="selectorFiltro"
@@ -66,6 +64,7 @@ export function Filtro({ filtrarCandidatos, cargarCandidato }: any) {
           Part-Time
         </MenuItem>
       </Select>
+
       <InputLabel id="Movilidad">Movilidad</InputLabel>
       <Select
         className="selectorFiltro"
@@ -82,6 +81,7 @@ export function Filtro({ filtrarCandidatos, cargarCandidato }: any) {
           No
         </MenuItem>
       </Select>
+
       <InputLabel id="RangoEdad">Edad (18-65)</InputLabel>
       <Slider
         className="sliderEdad"
@@ -91,14 +91,17 @@ export function Filtro({ filtrarCandidatos, cargarCandidato }: any) {
         max={65}
         valueLabelDisplay="auto"
       />
+      {/* Boton para filtar/buscar los candidatos */}
       <button
         className="btn"
         onClick={() => filtrarCandidatos({ name: null, edad, disponibilidad, movilidad })}> 
         Buscar
       </button>
+
       <button className="btn" onClick={reset}>
         Reset
       </button>
+
     </div>
   );
 }

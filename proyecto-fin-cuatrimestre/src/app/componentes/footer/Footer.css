@@ -2,8 +2,6 @@
   width: 80%;
   height: auto;
   margin: 8px auto;
-  /* border: solid 2px rgba(191, 100, 25, 0.696); */
-  /*  border-radius: 4px; */
   display: flex;
   flex-flow: wrap;
   box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
@@ -12,7 +10,6 @@
 }
 
 .footer div {
-  /* min-width: 200px; */
   display: flex;
   flex-direction: column;
   height: auto;
@@ -24,7 +21,6 @@
 .footer div>a {
   text-decoration: none;
   color: black;
-
 }
 
 .pie-enlaces>a:hover {

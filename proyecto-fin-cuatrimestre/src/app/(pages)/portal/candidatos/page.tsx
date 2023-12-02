@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { CardCandidato } from "../../../componentes/cardCandidato/cardCandidato";
 import "../portal.css";
 import { Candidato, CandidatoFiltro } from "@/app/model/Candidato";
-import { GetCandidatosFromAPI } from "@/app/services/data";
+import { GetCandidatosFromAPI } from "@/app/services/Data";
 // import { Buscador } from "../../../componentes/buscador/Buscador";
 import { Filtro } from "../../../componentes/filtros/FiltroCandidatos";
 
@@ -52,6 +52,9 @@ export default function Candidatos() {
     /* console.log("Soy resultado", result); */
   };
 
+  // Efecto de la primera renderizacion que muestra todos los canditatos del arreglo generado por la funcion cargar candidatos
+  // utiliza el Get candidatos Api que se genera en Services.
+
   useEffect(() => {
     cargarCandidato();
   }, []);
@@ -61,7 +64,7 @@ export default function Candidatos() {
       <div className="divContenedorMain">
         <div className="divFiltro">
           {/* <Buscador setSearch={setSearch} /> */}
-          <Filtro filtrarCandidatos={filtrarCandidatos} 
+          <Filtro filtrarCandidatos={filtrarCandidatos}
             cargarCandidato={cargarCandidato}
           />
         </div>

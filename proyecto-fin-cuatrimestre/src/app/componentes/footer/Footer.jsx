@@ -3,7 +3,7 @@ import React from "react";
 import "./Footer.css";
 
 //Componente Footer
-//Se utiliza en portal/template
+//Se utiliza en Layout para ser renderizado una sola vez
 export const Footer = () => {
   return (
     <>
@@ -23,7 +23,6 @@ export const Footer = () => {
         </div>
         <div className="pie-areas">
           <p>Areas de Gobierno</p>
-          {/* <a href="http://gobiernoabierto.olavarria.gov.ar/visualizaciones-4/organigrama/">Organigrama</a> */}
           <a href="https://www.olavarria.gov.ar/desarrollo-economico/empresas/">
             Desarrollo Económico
           </a>

@@ -16,9 +16,7 @@ export function FiltroEmpleos({ filtrarEmpleos, cargarEmpleos }) {
   //Funcion donde evaluamos la carga horaria seleccionada para pasarle al filtro
   const handleDisponibilidadChange = (e) => {
     setSelected(e.target.value);
-    e.target.value === "Full-Time"
-      ? setCargaHoraria(true)
-      : setCargaHoraria(false);
+    e.target.value === "Full-Time"  ? setCargaHoraria(true)  : setCargaHoraria(false);
   };
 
   //Funcion para volver a los valores por defecto del filtro y volver a mostrar el arreglo completo de los Empleos
@@ -48,12 +46,15 @@ export function FiltroEmpleos({ filtrarEmpleos, cargarEmpleos }) {
           Part-Time
         </MenuItem>
       </Select>
+      {/* Boton para filtar/buscar los candidatos */}
       <button className="btn" onClick={() => filtrarEmpleos({ cargaHoraria })}>
         Buscar
       </button>
+
       <button type="reset" className="btn" onClick={handleReset}>
         Reset
       </button>
+      
     </div>
   );
 }

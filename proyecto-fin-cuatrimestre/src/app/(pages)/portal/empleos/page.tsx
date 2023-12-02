@@ -46,6 +46,8 @@ export default function Empleos() {
     /* console.log("Soy resultado", result); */
   };
 
+  // Efecto de la primera renderizacion que muestra todos los empleos del arreglo generado por la funcion cargar empleos
+  // utiliza el Get Empleos Api que se genera en Services.
   useEffect(() => {
     cargarEmpleos();
   }, []);

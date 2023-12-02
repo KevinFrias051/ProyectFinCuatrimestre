@@ -1,12 +1,7 @@
-import type { Metadata } from 'next';
 import { BtnEmpYCand } from '@/app/componentes/btnEmpYCand/BtnEmpYCand';
 import { BtnHome } from '@/app/componentes/btnHome/BtnHome';
 
-export const metadata: Metadata = {
-  title: 'Portal de Empleos de Olavarria',
-  description: '',
-}
-
+// Template permite que  Boton Home y Empleos y Candidatos este presente en todas las paginas del portal.
 export default function RootLayout({
   children,
 }: {
@@ -14,10 +9,11 @@ export default function RootLayout({
 }) {
   return (
     <>
-    <div className='divBtn'>
-    <BtnHome/>
-    <BtnEmpYCand/>
-    </div>
+      <div className='divBtn'>
+        <BtnHome />
+        <BtnEmpYCand />
+      </div>
+
       <main>
         {children}
       </main>

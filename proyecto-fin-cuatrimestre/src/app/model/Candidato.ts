@@ -9,11 +9,9 @@ export interface Candidato {
 };
 
 export interface CandidatoFiltro {
-    
     name : string
     edad : number[],
     disponibilidad : boolean,
     movilidad : boolean,
-    
 };
 
