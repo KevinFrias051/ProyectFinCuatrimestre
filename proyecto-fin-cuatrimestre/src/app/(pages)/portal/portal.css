@@ -4,38 +4,40 @@
     width: 80%;
     margin: 10px auto;
     padding: 10px;
-    align-items: center; 
+    align-items: center;
     box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
     -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
     -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
 }
 
- .divFiltro {
+.divFiltro {
     display: flex;
     flex-direction: row;
     /* flex-wrap:wrap; */
-    align-items: center;    
+    align-items: center;
     justify-content: center;
-    width: 70%;
-     height: 1 auto; 
+    width: 95%;
+    height: 1 auto;
     border: solid 1px black;
-} 
+}
 
 .divContenedorCard {
     display: flex;
     width: 80%;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
 }
-.divBtn{
+
+.divBtn {
     width: 80%;
     margin: 10px auto;
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .btn {
     box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
     -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
