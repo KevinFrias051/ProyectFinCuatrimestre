@@ -22,9 +22,9 @@
 }
 
 .selectorFiltro{
-width: 110px !important;
+width: 128px !important;
 }
 
 .sliderEdad {
-  width: 90px;
+  max-width: 90px;
 }
