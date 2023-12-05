@@ -1,7 +1,6 @@
 # Página Web Municipal de Búsqueda de Empleo!
 
 ***Descripción:***
-
 	Este repositorio contiene el código fuente y la documentación para la página web de búsqueda de empleo y empleados perteneciente al Municipio de Olavarría. 
 El objetivo principal de esta plataforma es facilitar la conexión entre empleadores y solicitantes de empleo dentro de nuestra comunidad.
 
