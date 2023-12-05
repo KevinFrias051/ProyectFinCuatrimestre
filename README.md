@@ -15,9 +15,9 @@ Interfaz Amigable: Diseño intuitivo y fácil navegación para garantizar una ex
  - Back-end: Node.js, Axios, MockApi.
 
 ***Instalación y Uso:***
- 1. Clona este repositorio: git clone https://trello.com/b/PBfR1gy3/proyectofinal2023.
+ 1. Clona este repositorio: git clone https://github.com/KevinFrias051/ProyectFinCuatrimestre.git.
  2. Instala las dependencias del frontend y backend: npm install.
- 3. Ejecuta el servidor backend y frontend: npm run dev.
+ 3. Ejecuta el servidor: npm run dev.
  4. Accede a la plataforma desde tu navegador: http://localhost:3000.
 
 ***Equipo:***
