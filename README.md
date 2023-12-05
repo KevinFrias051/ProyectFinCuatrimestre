@@ -1,8 +1,35 @@
-# ProyectFinCuatrimestre
-Empezar a comentar el codigo.
-Al crear un componentes y/o elemento, o clases, asignar nombres descriptivos ("divBotonesHeader").
-Utilizar camelCase para nombres.
-Se permite mesclar español e ingles para los nombres.
-Imagenes utilizadas en un mismo lugar tienen que estar en una carpeta particular y su importacion tiene que ser atravez de un js.
-Por cada tarea asignada se crea una rama nueva y se trabaja sobre la misma.
-Despues del commit diario. reunirce a ver lo trabajado y comentar al respecto.
+# Página Web Municipal de Búsqueda de Empleo!
+
+***Descripción:***
+
+	Este repositorio contiene el código fuente y la documentación para la página web de búsqueda de empleo y empleados perteneciente al Municipio de Olavarría. 
+El objetivo principal de esta plataforma es facilitar la conexión entre empleadores y solicitantes de empleo dentro de nuestra comunidad.
+
+***Características Principales:***
+
+  Búsqueda de Empleo: Los usuarios pueden explorar y buscar diversas ofertas laborales disponibles dentro del municipio y aplicar a la que les resulte atractiva.
+	
+   Búsqueda de Candidatos: Los usuarios pueden encontrar distintos perfiles de candidatos para su empresa y así poder contratarlos.
+
+   Interfaz Amigable: Diseño intuitivo y fácil navegación para garantizar una experiencia positiva para todos los usuarios.
+
+***Tecnologías Utilizadas:***
+ - Lenguajes: HTML, CSS, Java Script. 
+ - Front-end: React.js, Boostrap, Mui. 
+ - Back-end: Node.js, Axios, MockApi.
+
+***Instalación y Uso:***
+ 1. Clona este repositorio: git clone https://trello.com/b/PBfR1gy3/proyectofinal2023.
+ 2. Instala las dependencias del frontend y backend: npm install.
+ 3. Ejecuta el servidor backend y frontend: npm run dev.
+ 4. Accede a la plataforma desde tu navegador: http://localhost:3000.
+
+***Equipo:***
+	Este proyecto es mantenido por el equipo patata compuesto por: 
+ - Kevin Frias(PM).
+ -  Franco Serjen.
+ - Mario Lindner.
+ - Ariel Romera.
+ - Lucas Fava.
+	
+***By Team Potato***
