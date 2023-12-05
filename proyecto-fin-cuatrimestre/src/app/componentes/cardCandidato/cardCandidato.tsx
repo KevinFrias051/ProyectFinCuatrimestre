@@ -15,12 +15,12 @@ export function CardCandidato(props: any) {
   } = props;
 
   //Estado: contrato. Utilizado para contratar o despedir candidato
-  const [contrato, setContrato] = useState<String>("Contratar");
+  const [contrato, setContrato] = useState<String>("Contactar");
   const contratar = () => {
-    if (contrato == "Contratar") {
-      setContrato("Despedir");
+    if (contrato == "Contactar") {
+      setContrato("Rechazar");
     } else {
-      setContrato("Contratar");
+      setContrato("Contactar");
     }
   };
 
