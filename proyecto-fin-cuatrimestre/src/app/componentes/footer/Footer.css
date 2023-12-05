@@ -1,55 +1,45 @@
 .footer {
-    width: 80%;
-    height: auto;
-    margin: 8px auto;
-    /* border: solid 2px rgba(191, 100, 25, 0.696); */
-    /*  border-radius: 4px; */
-    display: flex;
-    flex-flow: wrap;
-    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
-    -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
-    -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+  width: 80%;
+  height: auto;
+  margin: 8px auto;
+  display: flex;
+  flex-flow: wrap;
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.69);
 }
 
 .footer div {
-    /* min-width: 200px; */
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: auto;
-    padding: 15px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: auto;
+  padding: 15px;
+  justify-content: space-between;
 }
 
 .footer div>a {
-    text-decoration: none;
-    color: black;
-
+  text-decoration: none;
+  color: black;
 }
-
-/* .pie-telefonos>p {
-    margin-bottom: 7px;
-}
- */
 
 .pie-enlaces>a:hover {
-    color: black;
-    background: #bbb775;
-    border-radius: 7px;
-    font-weight: 600;
+  color: black;
+  background: #bbb775;
+  border-radius: 7px;
+  font-weight: 600;
 }
 
-
 .pie-areas>a:hover {
-    color: black;
-    background: #e1dc8c;
-    border-radius: 7px;
-    font-weight: 600;
+  color: black;
+  background: #e1dc8c;
+  border-radius: 7px;
+  font-weight: 600;
 }
 
 .footer p {
-    margin-bottom: 2px;
-    font-size: 17px;
-    font-weight: 700;
-    text-decoration: underline solid rgb(68, 68, 68);
+  margin-bottom: 2px;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: underline solid rgb(68, 68, 68);
 }

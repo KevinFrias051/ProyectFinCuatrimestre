@@ -1,6 +1,8 @@
 "use client"
 import React from 'react'
 import './Menu.css'
+
+// Componente menu, lista las opciones - no tiene funcionalidad
 export const Menu = () => {
   return (
     <>

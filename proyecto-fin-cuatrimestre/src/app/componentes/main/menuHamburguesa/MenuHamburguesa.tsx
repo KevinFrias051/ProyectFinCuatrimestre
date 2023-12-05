@@ -2,10 +2,13 @@
 import React from 'react'
 import './MenuHamburguesa.css'
 export const MenuHamburguesa = () => {
+    // Renderiza el menu hamburguesa lista las opciones - no tiene funcionalidad
     return (
         <>
             <nav className='Burguer'>
+                {/* Input tipo checkbox desplegable */}
                 <input type="checkbox" id="menu"></input>
+                {/* Boton de menu */}
                 <label htmlFor="menu"> ☰ Menu </label>
                 <ul>
                     <a href="#">Novedades</a>

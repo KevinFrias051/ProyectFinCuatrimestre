@@ -1,0 +1,30 @@
+.divFiltroCandidatos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  gap: 20px;
+  width: 100%;
+
+}
+
+.divFiltroEmpleos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 20px;
+  width: 100%;
+}
+
+.selectorFiltro{
+width: 128px !important; /*llevamos de 110 a 128*/
+}
+
+.sliderEdad {
+  max-width: 90px;
+}
