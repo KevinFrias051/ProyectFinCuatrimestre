@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "../portal.css";
 import { Empleo, EmpleoFiltro } from "@/app/model/Empleo";
-import { GetEmpleosFromAPI } from "@/app/services/Data";
+import { GetEmpleosFromAPI } from "@/app/services/data";
 import { FiltroEmpleos } from "@/app/componentes/filtros/FiltroEmpleos";
 import { CardEmpleo } from "@/app/componentes/cardEmpleo/CardEmpleo";
 
